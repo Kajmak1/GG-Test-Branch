@@ -1,0 +1,23 @@
+﻿l_english:
+
+ mrm_denmark.event_1_title:0 "Regain the Swedish Crown"
+ mrm_denmark.event_1_desc:0 "The Kingdom of Sweden had been a part of the Kalmar Union for decades, until their sudden declaration of independence. We cannot allow this defiance to go unpunished. Shall we return the Swedish crown to the Union?"
+ mrm_denmark.1_option_1:0 "We shall."
+
+ mrm_ethiopia.event_1_title:0 "Conversion of the Southern Fetishists"
+ mrm_ethiopia.event_1_desc:0 "The fetishist peoples of our former southern border have been conquered. Let us convert them away from their idols, to worship our one true God!"
+ mrm_ethiopia.1.a:0 "All praise to The Most High!"
+ mrm_ethiopia.1.a_tt:0 "All §YFetishist§! provinces in our newly conquered territory will be converted to §YCoptic§!."
+
+ mrm_nationStats.1.title:0 "National Statistics"
+ mrm_nationStats.1.a:0 "Thanks for the information!"
+ mrm_nationStats.1.desc:0 "You have developed provinces a total of §Y[Root.totalTimesDeveloped.GetValue]§! times.\nYou have increased the £adm£ development of provinces a total of §Y[Root.timesDevelopedAdmin.GetValue]§! times.\nYou have increased the £dip£ development of provinces a total of §Y[Root.timesDevelopedDiplo.GetValue]§! times.\nYou have increased the £mil£ development of provinces a total of §Y[Root.timesDevelopedMil.GetValue]§! times.\n\nYou have hired §Y[Root.numGenerals.GetValue]§! generals and §Y[Root.numAdmirals.GetValue]§! admirals, for a total of §Y[Root.numLeaders.GetValue]§! leaders."
+ 
+ mrm.1.t:0 "Dreams of the Past"
+ mrm.1.d:0 "The memory of the old ruler lingers deep in the hearts of the people. His martial excellence, brilliance and fairness has captivated the fascination of the people and the nobility. Priest sing praises of his devoutness and love for God and the people. A disinherited son is said to be of the same mold as his father and has arosen the peasants and won support even among the nobility."
+ mrm.1.a:0 "Abdicate, he is clearly the better king."
+ mrm.1.b:0 "Death to the enemies of the crown!"
+ mrm.2.t:0 "Dreams of the Past"
+ mrm.2.d:0 "The memory of the old ruler lingers deep in the hearts of the people. His martial excellence, brilliance and fairness has captivated the fascination of the people and the nobility. The Ulemma sing praises of his devoutness and love for God and the people. A disinherited son is said to be of the same mold as his father and has arosen the peasants and won support even among the nobility."
+ mrm.2.a:0 "Abdicate, he is clearly the better king."
+ mrm.2.b:0 "Death to the enemies of the crown!"

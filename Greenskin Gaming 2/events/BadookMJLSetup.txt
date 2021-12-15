@@ -1,0 +1,41 @@
+namespace = badmjl
+
+normal_or_historical_nations = yes
+
+	
+country_event = {
+	id = badmjl.1
+	title = badmjl.1.t
+	desc = badmjl.1.d
+	picture = ASSASSINATION_eventPicture
+	fire_only_once = yes
+
+	is_triggered_only = yes
+
+	hidden = yes 
+	
+	trigger = {
+		tag = MAR
+		NOT = {
+			has_country_flag = mar_brahmin_setup_flag
+		}
+	}
+	
+	immediate = {
+		set_variable = {
+			which = MarBrahminSupport 
+			value = 0
+		}
+		set_variable = {
+			which = MarBrahminOppose 
+			value = 0
+		}
+		set_country_flag = mar_brahmin_setup_flag
+	}
+	
+	option = { 
+		name = flavor_badmjl.1.a 
+		
+	}
+}
+

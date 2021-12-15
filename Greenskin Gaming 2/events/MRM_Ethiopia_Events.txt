@@ -1,0 +1,31 @@
+namespace = mrm_ethiopia
+normal_or_historical_nations = yes
+
+# Convert the Fetishists of Southern Ethiopia - Triggered by mission
+country_event = { 
+    id = mrm_ethiopia.1
+	title = "mrm_ethiopia.event_1_title"
+	desc = "mrm_ethiopia.event_1_desc"
+	picture = MRM_Logo
+
+    is_triggered_only = yes
+
+	trigger = {
+		tag = ETH
+	}
+
+    option = {
+        name = "mrm_ethiopia.1.a"
+        custom_tooltip = mrm_ethiopia.1.a_tt
+		hidden_effect = {
+			southern_ethiopia_area = {
+				limit = { religion = shamanism}
+            	change_religion = coptic
+			}
+			hadiya_area = {
+				limit = { religion = shamanism}
+            	change_religion = coptic
+			}
+		}
+    }
+}

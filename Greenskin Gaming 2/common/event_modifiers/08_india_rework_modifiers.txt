@@ -1,0 +1,86 @@
+sri_lanka_paradise = {
+	local_development_cost = -0.55
+	trade_goods_size = 2
+	allowed_num_of_buildings = 2
+}	
+
+sri_lanka_development = {
+	local_development_cost = -0.3
+	trade_goods_size = 1
+	allowed_num_of_buildings = 1
+}
+
+mad_island_hopping = {
+	colonists = 1
+	range = 0.5
+}
+
+mad_colonisation_fever = {
+	global_colonial_growth = 75
+	range = 0.5
+	global_tax_modifier = -0.2
+}
+
+brahmin_resistance = {
+	local_autonomy = 0.3
+	local_governing_cost = 1
+}
+
+brahmin_educated = {
+	adm_advisor_cost = -0.15
+}
+
+marathas_educated = {
+	mil_advisor_cost = -0.15
+}
+
+sancutaries_destroyed = {
+	local_tax_modifier = -0.5
+}
+
+sancutaries_helped = {
+	local_tax_modifier = 0.1
+}
+
+marathas_schools = )
+	army_tradition = 0.5
+}
+
+marathas_academies = )
+	army_tradition = 0.5
+}
+
+marathas_institutes ={
+	infantry_power = 0.10
+}
+
+marathas_loans = {
+	inflation_reduction = 0.1
+}
+
+bidar_new_captial = {
+	local_development_cost = -0.25
+	tax_income = 24
+	local_production_efficiency = 0.1
+}
+
+marathas_debt_free_trading = {
+	merchants = 1
+}
+
+colonisation_fever = {
+	naval_morale = 0.05
+	colonists = 1
+	range = 0.25
+}
+
+fortress_lanka = {
+	attrition = 1
+	local_defensiveness = 0.5
+	garrison_growth = 0.5
+}
+
+fish_merchants = {
+	trade_goods_size = 5
+	local_development_cost = -0.15
+}

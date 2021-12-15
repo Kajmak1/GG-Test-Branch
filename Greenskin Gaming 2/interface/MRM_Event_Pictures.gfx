@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "MRM_Logo"
+		texturefile = "gfx/event_pictures/event_pictures_MRM/MRM_Logo.dds"
+		allwaystransparent = yes
+	}
+}

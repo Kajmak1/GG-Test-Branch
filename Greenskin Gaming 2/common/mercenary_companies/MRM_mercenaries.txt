@@ -1,0 +1,153 @@
+
+#North Africa
+
+merc_maghrebi_company = {
+    regiments_per_development = 0.04
+    home_province = 344 # Marrakech
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+	trigger = { 
+		capital_scope = { region = maghreb_region }
+	}
+    modifier = { }
+}
+
+merc_iberian_jihadists = {
+    regiments_per_development = 0.05
+    home_province = 336 #Tala Imsan
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+	trigger = { 
+		capital_scope = { region = maghreb_region }
+		religion_group = muslim
+	}
+    modifier = { }
+}
+
+merc_farfane_company = {
+	regiments_per_development = 0.05
+    home_province = 338 #Mitija
+	sprites = { dlc058_mor_sprite_pack muslimgfx_sprite_pack }
+	trigger = { 
+		capital_scope = { region = maghreb_region }
+		religion_group = muslim
+	}
+    modifier = { }
+}
+
+#manchuria
+merc_jurchen_tribes = {
+    regiments_per_development = 0.05
+    cavalry_weight = 0.8
+    home_province = 4661 #eddala
+	cost_modifier = 1.1
+	sprites = { dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		
+		capital_scope = {
+			region = manchuria_region
+		}
+	}
+    modifier = {
+        cavalry_power = 0.15
+    }
+}
+merc_jurchen_banners = {
+    regiments_per_development = 0.05
+    cavalry_weight = 0.2
+    home_province = 730 #eddala
+	cost_modifier = 0.8
+	sprites = { dlc068_mng_sprite_pack mng_base_sprite_pack }
+	trigger = {
+		
+		capital_scope = {
+			region = manchuria_region
+		}
+	}
+    modifier = {
+        movement_speed = 0.15
+
+    }
+}
+merc_coptic_warriors = {
+    regiments_per_development = 0.03
+    home_province = 1224
+	sprites = { dlc057_zan_sprite_pack africangfx_sprite_pack }
+    trigger = {
+		religion = coptic
+		any_owned_province = {
+			superregion = africa_superregion
+		}
+	}
+	modifier = {
+        infantry_power = 0.075
+	}
+}
+merc_african_tribesmen = {
+    regiments_per_development = 0.03
+    home_province = 1213
+	sprites = { dlc057_zan_sprite_pack africangfx_sprite_pack }
+    trigger = {
+		any_owned_province = {
+			superregion = africa_superregion
+		}
+	}
+	modifier = {
+        loot_amount = 0.25
+	}
+}
+merc_kongo_tribesmen = {
+    regiments_per_development = 0.05
+    home_province = 798
+	sprites = { dlc057_zan_sprite_pack africangfx_sprite_pack }
+    trigger = {
+		primary_culture = kongolese
+	}
+	modifier = {
+        movement_speed = 0.15
+	}
+}
+merc_sumatran_company = {
+    regiments_per_development = 0.03
+    home_province = 2676
+	sprites = { asiangfx_sprite_pack }
+    trigger = {
+		capital_scope = { region = malaya_region}
+	}
+	modifier = {
+        shock_damage = 0.1
+	}
+}
+merc_persian_warriors = {
+    regiments_per_development = 0.05
+	cavalry_weight = 0.2
+    home_province = 2213
+	sprites = { dlc079_tab_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		capital_scope = { superregion = persia_superregion }
+	}
+    modifier = { 
+		shock_damage_received = -0.075
+	}
+}
+merc_danish_guard = {
+    regiments_per_development = 0.04
+    home_province = 12
+	sprites = { dlc053_hab_sprite_pack dlc029_hab_sprite_pack hab_base_sprite_pack }
+    trigger = {
+		capital_scope = { region = scandinavia_region}
+	}
+	modifier = { 
+		infantry_fire = 0.2
+	}
+}
+merc_yemeni_jihadists = {
+    regiments_per_development = 0.05
+    home_province = 390
+	sprites = { dlc079_tab_sprite_pack muslimgfx_sprite_pack }
+	trigger = {
+		capital_scope = { region = arabia_region}
+	}
+    modifier = { 
+		siege_ability = 0.1
+		land_morale = 0.05
+	}
+}

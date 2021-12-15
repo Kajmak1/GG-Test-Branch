@@ -1,0 +1,29 @@
+﻿l_english:
+
+ COMMANDERY_CANT_DECLARE_WAR:0 "Chinese commanderies cannot declare war."
+ COMMANDERY_CANT_FORM_COALITION:0 "Chinese commanderies cannot form coalitions."
+ COMMANDERY_CANT_BE_MARRIED:0 "Chinese commanderies cannot accept royal marriages."
+ COMMANDERY_CANT_MARRY:0 "Chinese commanderies cannot send royal marriage offers."
+ COMMANDERY_CANT_WARN:0 "Chinese commanderies cannot warn other nations."
+ COMMANDERY_CANT_THREATEN:0 "Chinese commanderies cannot threaten other nations."
+ COMMANDERY_CANT_GUARANTEE:0 "Chinese commanderies cannot guarantee other nations."
+ COMMANDERY_CANT_BE_GUARANTEED:0 "Chinese commanderies cannot be guaranteed by other nations."
+ COMMANDERY_CANT_SUPPORT_INDEPENDENCE:0 "Chinese commanderies cannot support the independence of other nations."
+ COMMANDERY_CANT_BE_ALLIED:0 "Chinese commanderies cannot be allied to other nations."
+ COMMANDERY_CANT_ALLY:0 "Chinese commanderies cannot ally other nations."
+ COMMANDERY_CANT_HAVE_RELATIONS_IMPROVED:0 "Chinese commanderies cannot have their relations improved."
+ COMMANDERY_CANT_IMPROVE_RELATIONS:0 "Chinese commanderies cannot improve relations with other nations."
+ COMMANDERY_CANT_ENFORCE_PEACE:0 "Chinese commanderies cannot enforce peace between other nations."
+ COMMANDERY_CANT_SUBSIDIZE:0 "Chinese commanderies cannot subsidize other nations."
+ COMMANDERY_CANT_OFFER_LOAN:0 "Chinese commanderies cannot offer loans to other nations."
+ COMMANDERY_CANT_SEND_GIFT:0 "Chinese commanderies cannot send gifts to other nations."
+ COMMANDERY_CANT_MAKE_TRIBUTARY:0 "Chinese commanderies cannot make other nations into tributaries."
+ COMMANDERY_CANT_ASK_TRIBUTARY:0 "Chinese commanderies cannot offer to be the tributaries of other nations."
+ COMMANDERY_CANT_VASSALIZE:0 "Chinese commanderies cannot make other nations into vassals."
+
+ mrm_cannot_colonize_outside_colonial_region_tt:0 "Colonial nations cannot colonize outside of their colonial region."
+
+ mrm_netherlands_gains_cores_tt:0 "The Netherlands gains cores on all owned provinces in the §YLow Countries§! region with §YDutch§!, §YFlemish§!, or §YFrisian§! culture until the Disaster is resolved."
+ mrm_netherlands_loses_cores_tt:0 "The Netherlands loses cores on all owned provinces in the §YLow Countries§! region with §YDutch§!, §YFlemish§!, or §YFrisian§! culture."
+
+ tooltip_has_a_port_gets_colonialism:0 "Port province"

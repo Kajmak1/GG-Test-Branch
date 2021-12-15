@@ -1,0 +1,18 @@
+# The purpose of this file is to give QQ a truce with Mams.
+
+name = "QQ - Mamluk War"
+war_goal = {
+    type = take_claim
+    casus_belli = cb_conquest
+	province = 361 # Cairo
+}
+# War start date
+1443.1.1 = {
+	add_attacker = QAR
+	add_defender = MAM
+}
+# War end date
+1444.9.10 = {
+    	rem_attacker = QAR
+	rem_defender = MAM
+}

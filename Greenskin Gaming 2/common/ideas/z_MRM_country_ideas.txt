@@ -1,0 +1,231 @@
+#############################################################
+# Custom ideas for new nations/nations without unique ideas #
+# Please keep ideas alphabetical, based on country name     #
+#############################################################
+
+# Bukhara
+BUK_ideas = {
+    start = {
+        cavalry_cost = -0.1
+        merchants = 1
+    }
+    bonus = {
+        global_trade_goods_size_modifier = 0.1
+    }
+    trigger = {
+        tag = BUK
+    }
+    free = yes
+    buk_nomadic_caravans = {
+        caravan_power = 0.15
+    }
+    buk_mobilize_steppes = {
+		global_manpower_modifier = 0.15
+    }
+    buk_nomadic_order = {
+        discipline = 0.05
+    }
+    buk_traders = {
+        trade_efficiency = 0.1
+    }
+    buk_horse_taming = {
+		cavalry_power = 0.2
+    }
+    buk_clan_heirarchy = {
+        governing_capacity_modifier = 0.15
+    }
+    buk_foraging = {
+        land_attrition = -0.15
+        movement_speed = 0.10
+    }
+}
+
+# Kilwa
+ZAN_ideas = {
+	start = {
+		global_trade_goods_size_modifier = 0.1
+		inflation_reduction = 0.1
+	}
+	bonus = {
+		development_cost = -0.1
+	}
+	trigger = {
+		tag = ZAN
+	}
+	free = yes
+	zim_mwenemutapa = {
+		discipline = 0.05
+	}
+	zim_rekindling_the_royal_fires = {
+		stability_cost_modifier = -0.1
+	}
+	zim_mutapa_architecture = {
+		fort_maintenance_modifier = -0.1
+	}
+	zim_spokesman_before_the_dead = {
+		legitimacy = 1
+		devotion = 1
+	}
+	zim_elected_administrators = {
+		global_tax_modifier = 0.1
+	}
+	zim_curva = {
+		trade_efficiency = 0.1
+	}
+	zim_controlling_the_mutapan_riches = {
+		global_own_trade_power = 0.2
+	}
+}
+
+# Maghreb
+MGB_ideas = {
+    start = {
+		may_perform_slave_raid = yes
+		land_forcelimit_modifier = 0.2
+	}
+	bonus = {
+		land_morale = 0.1
+	}
+	trigger = {
+		tag = MGB
+	}
+	free = yes
+	mgb_grand_fleet = {
+		heavy_ship_power = 0.1
+	}
+	mgb_moroccan_scholars = {
+		idea_cost = -0.1
+		monthly_piety = -0.001
+	}
+	mgb_tunisian_merchants = {
+		trade_efficiency = 0.1
+		caravan_power = 0.2
+	}
+	mgb_tunisian_ships = {
+		galley_power = 0.2
+	}
+	mgb_maghrebi_unity = {
+		global_manpower_modifier = 0.20
+	}
+	mgb_pirates_turned_admirals = {
+		leader_naval_fire = 1
+	}
+	mgb_tame_the_desert = {
+		development_cost = -0.1
+	}
+}
+
+# Siam
+SIA_ideas = {
+	start = {
+		land_morale = 0.1
+		global_manpower_modifier = 0.3
+	}
+	bonus = {
+		discipline = 0.05
+	}
+	trigger = {
+		tag = SIA
+	}
+	free = yes
+	sia_royal_poets = {
+		prestige = 0.5
+		idea_cost = -0.1
+	}
+	sia_advanced_elephant_warfare = {
+		cavalry_power = 0.2
+		cavalry_cost = -0.15
+	}
+	sia_experienced_ambassadors = {
+		diplomatic_reputation = 2
+	}
+	sia_encourage_immigration = {
+		development_cost = -0.1
+	}
+	sia_integrating_the_realm = {
+		diplomatic_annexation_cost = -0.2
+	}
+	sia_education_reform = {
+		technology_cost = -0.1
+	}
+	sia_royal_absolutism = {
+		yearly_absolutism = 1
+		legitimacy = 1
+	}
+}
+
+
+# Malaya
+MSA_ideas = {
+    start = {
+        global_trade_power = 0.15
+        land_morale = 0.1
+    }
+    bonus = {
+        fire_damage = 0.1
+    }
+    trigger = {
+        tag = MSA
+    }
+    free = yes
+    settle_the_islands = { # same as malay ideas
+        global_colonial_growth = 20
+    }
+    msa_advanced_galley_warfare = {
+        galley_power = 0.2
+    }
+    msa_expert_haggling = {
+        trade_efficiency = 0.1
+    }
+    msa_chart_the_seas = {
+        own_coast_naval_combat_bonus = 1
+    }
+    msa_in_every_port = {
+        merchants = 1
+    }
+    msa_sea_nomads_steering = {
+        trade_steering = 0.15
+    }
+    msa_spice_kings = {
+        global_trade_goods_size_modifier = 0.1
+    }
+}
+
+#Zulu
+ZUL_ideas = {
+	start = {  
+		land_morale = 0.1
+		infantry_cost = -0.1
+	}
+  
+	bonus = {
+		shock_damage_received = -0.1
+	}
+  
+	trigger = {
+		tag = ZUL
+	}
+	free = yes
+  
+	zul_legacy_of_zimbabwe = {
+		build_cost = -0.1
+	}
+	zul_strict_gold_regulations = {
+		inflation_reduction = 0.1
+	}
+	zul_empowering_the_rozwi = {
+		infantry_power = 0.1
+	}
+	zul_hierarchical_tax_organization = {
+		global_tax_modifier = 0.1
+	}
+	zul_discipline_and_traning = {
+		discipline = 0.05
+	}
+	zul_mwari_cult = {
+		global_autonomy = -0.05
+	}
+	zul_vashambadzi = {
+		trade_efficiency = 0.1
+	}
+}

@@ -1,0 +1,52 @@
+﻿l_english:
+
+ embrace_cossacks_title:0 "Embrace The Cossacks"
+ embrace_cossacks_desc:0 "The growing population of cossack tribesmen within our borders has prompted for us to reconsider our reliance on the Dhimmi. It may be in our best interest to abolish the Dhimmi, and organize the Cossacks in their place."
+ embrace_cossacks_effect_tt:0 "Lose the §YDhimmi§! estate. \nGain the §YCossacks§! estate."
+
+ form_maghreb_nation_title:0 "Form the Maghrebi Nation"
+ form_maghreb_nation_desc:0 "The Maghreb must stand united if it is to stand at all."
+
+ form_zaporozhie_title:0 "Form Zaporozhie"
+ form_zaporozhie_desc:0 "The steppes call to us. The bravery and ingenuity of the Cossacks in the steppes have impressed our people. With the rise of Muscovy and Poland we must be willing to adapt or face destruction, perhaps it is time to embrace this way of life to defend our nation?"
+
+ colonist_1_title:0 "Interest in Colonies"
+ colonist_1_desc:0 "It has come to our attention that foreign powers are attempting to enrich themselves off the unspoiled riches of recently discovered lands. We must not be left behind in this new race for power!"
+
+ colonist_1_non_western_title:0 "Interest in Colonies"
+ colonist_1_non_western_desc:0 "It has come to our attention that foreign powers are attempting to enrich themselves off the unspoiled riches of recently discovered lands. We must not be left behind in this new race for power!"
+
+ showNationStats_title:0 "Show My National Statistics"
+ showNationStats_desc:0 "Show my national statistics."
+
+ siam_nation_title:0 "Form Siam"
+ siam_nation_desc:0 "For too long we have been viewed as an irrelevant backwater. It is time for Siam to rise and become what it always was meant to be."
+
+ form_zulu_nation_title:0 "Form the Zulu Empire"
+ form_zulu_nation_desc:0 "With the aquistition of the bountiful land in South Africa, a new way of life has been discovered. The Zulu confederacy must be brought into being!"
+ 
+ educate_ruler_title:0 "Educate Ruler"
+ educate_ruler_desc:0 "It has been noted by many that our ruler lacks critical skills needed to rule effectively. Some among the nobility claim a tutor would greatly improve the skills of the king."
+ educate_ruler_tooltip:0 "Ruler has less than 7 total skill"
+ 
+ sm_hire_general_title:0 "Hire a skilled foreign general"
+ sm_hire_general_desc:0 "The lack of leaders in our army has been noted, without a great deal of conflict it will difficult to find a suitable general in our ranks. Perhaps a foreign general will be prove useful? "
+
+ invite_sufi_warriors_title:0 "Invite Sufi Warriors"
+ invite_sufi_warriors_desc:0 "While the clergy disapprove of their unorthodox ways, our Sultan has taken a fancy to the Sufi warriors he has fought along side with. Perhaps we should elevate them?"
+
+ tolerate_the_mystics_title:0 "Tolerate the Mystics"
+ tolerate_the_mystics_desc:0 "The mystics have long been oppressed by previous Sultans. However, a change is in the air and many among the upper class prefer the engaging works of the Mystics over that of the Clerics."
+
+ islamic_centre_of_arts_title:0 "Center of the Arts"
+ islamic_centre_of_arts_desc:0 "Art that has once been considered blasphemous, such as Christian works, has spread throughout the realm. Other art that that Clerics find inappropriate has also been created. Should we tolerate this?"
+
+ PR_critical_events_title:0 "Available Critical Events"
+ PR_critical_events_desc:0 "Check to see which critical events are still available, a green tick indicates it is available and a red cross indicates it has already been fired"
+ PR_radical_reform_decision:0 "Radical Reforms (200 §W£adm£ and 200 §W£dip£)"
+ PR_military_reform_decision:0 "Military Reforms (200 §W£mil£ and 20% Morale)"
+ PR_commandant_decision:0 "Inspirational Leader (10% Discipline)"
+ PR_grand_captain_decision:0 "Grand Captain (20% Morale)" 
+
+ form_northseaempire_title:0 "Form North Sea Empire"
+ form_northseaempire_desc:0 "The legacy of the Norse Colonization is still rife in our country. With the collapse of the Kalmar Union, some have wondered whether we should recreate the North Sea Empire that Knut of old held. This opportunity may not last for long, we must reclaim this legacy quickly if we are to do so at all."

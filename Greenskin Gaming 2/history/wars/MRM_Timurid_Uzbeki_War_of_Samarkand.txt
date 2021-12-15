@@ -1,0 +1,18 @@
+# The purpose of this file is to give Uzbek a truce with the Timurids.
+
+name = "Timurid-Uzbeki War"
+war_goal = {
+    type = take_claim
+    casus_belli = cb_conquest
+	province = 442 # Bukhara
+}
+# War start date
+1439.1.1 = {
+	add_attacker = SHY
+	add_defender = TIM
+}
+# War end date
+1444.11.10 = {
+    rem_attacker = SHY
+	rem_defender = TIM
+}

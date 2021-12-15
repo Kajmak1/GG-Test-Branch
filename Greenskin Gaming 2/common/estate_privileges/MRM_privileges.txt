@@ -1,0 +1,176 @@
+mrm_estate_rajput_levies = {
+	icon = privilege_demand_more_troops
+	max_absolutism = -5
+	influence = 0.1
+	is_valid = {
+		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_nobles_golden_liberty }
+	}
+	modifier_by_land_ownership = {
+		global_tax_modifier = -0.25
+		global_manpower_modifier = 0.5
+	}
+	penalties = {
+	}
+	ai_will_do = {
+		factor = 5
+		modifier = {
+			factor = 1.5
+			any_rival_country = {
+				army_strength = {
+					who = root
+					value = 1.5
+				}
+			}
+		}
+		modifier = {
+			factor = 2
+			has_idea_group = quantity_ideas
+		}
+		modifier = {
+			factor = 1.5
+			NOT = { max_manpower = 40 }
+		}
+		modifier = {
+			factor = 0.5
+			max_manpower = 200
+		}
+		modifier = {
+			factor = 2
+			estate_territory = {
+				estate = estate_rajput
+				territory = 50
+			}
+		}
+		modifier = {
+			factor = 1.5
+			estate_territory = {
+				estate = estate_rajput
+				territory = 40
+			}
+		}
+		modifier = {
+			factor = 1.5
+			estate_territory = {
+				estate = estate_rajput
+				territory = 30
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				estate_territory = {
+					estate = estate_rajput
+					territory = 15
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				estate_territory = {
+					estate = estate_rajput
+					territory = 10
+				}
+			}
+		}
+		modifier = {
+			factor = 0.5
+			NOT = {
+				estate_territory = {
+					estate = estate_rajput
+					territory = 5
+				}
+			}
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { current_income_balance = 5 }
+		}
+		modifier = {
+			factor = 0.75
+			NOT = { current_income_balance = 0 }
+		}
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
+	}
+}
+
+estate_clergy_exploration_expedition = {
+	icon = privilege_grant_new_world_charter
+	land_share = 5
+	max_absolutism = -5
+	loyalty = 0.05
+	influence = 0.05
+	is_valid = {
+		has_country_flag = has_estate_clergy_exploration_expedition # Flag is set in on_actions.txt startup section.
+	}
+	on_granted = {
+		custom_tooltip = estate_clergy_exploration_expedition_effect_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = { has_terrain = desert }
+				add_province_modifier = {
+					name = estate_clergy_exploration_expedition_mod
+					duration = -1
+				}
+			}
+		}
+	}
+	on_revoked = {
+		custom_tooltip = estate_clergy_exploration_expedition_mod_revoke_tooltip
+		hidden_effect = {
+			every_owned_province = {
+				limit = { has_province_modifier = estate_clergy_exploration_expedition_mod }
+				remove_province_modifier = estate_clergy_exploration_expedition_mod
+			}
+		}
+	}
+	penalties = {
+	}
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 0
+			OR = {
+				NOT = { crown_land_share = 25 }
+				estate_influence = {
+					estate = estate_clergy
+					influence = 75
+				}
+			}
+			NOT = { has_estate_privilege = estate_clergy_exploration_expedition }
+		}
+		modifier = {
+			factor = 0
+			is_absolutism_active = yes
+		}
+	}
+}
+estate_church_mysticism_privilege = {
+	icon = privilege_recruit_minister
+	max_absolutism = -5
+	influence = 0.10
+	is_valid = {
+		religion_group = muslim
+	}
+	can_select = {
+		NOT = { has_estate_privilege = estate_church_clerical_ministers }
+	}
+	penalties = {
+	}
+	benefits = {
+		monthly_piety = -0.002
+	}
+	ai_will_do = {
+		factor = 10
+		modifier = {
+			factor = 0.5
+			is_absolutism_active = yes
+		}
+	}
+}

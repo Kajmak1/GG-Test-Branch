@@ -1,0 +1,529 @@
+kilwa_missions_1 = {
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = ZAN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	zan_destroy_mutapa = {
+		required_missions = { zan_raise_the_spears }
+		icon = mission_invade_kanem
+		position = 2
+		provinces_to_highlight = {
+			OR = {
+                area = zimbabwe_area
+                area = butua_area
+                area = lower_zambezi_area
+            }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			zimbabwe_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			butua_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_zambezi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = zan_conquest_of_mutapa
+				duration = 7300
+			}
+			ngonde_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ruvuma_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			uticulo_makuana_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			shire_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	zan_reclaim_our_origins = {
+		required_missions = { zan_destroy_mutapa }
+		icon = mission_unite_home_region
+		provinces_to_highlight = {
+			OR = {
+                area = ngonde_area
+                area = ruvuma_area
+                area = uticulo_makuana_area
+				area = shire_area
+            }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			ngonde_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ruvuma_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			uticulo_makuana_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			shire_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = zan_restored_ancestry
+				duration = 9125
+			}
+			upper_zambezi_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			zambia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			katanga_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			luba_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+        }
+	}
+	zan_delve_into_kongo = {
+		required_missions = { zan_reclaim_our_origins }
+		icon = mission_invade_kanem
+		provinces_to_highlight = {
+			OR = {
+                area = upper_zambezi_area
+                area = zambia_area
+                area = katanga_area
+				area = luba_area
+            }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			upper_zambezi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zambia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			katanga_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			luba_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			tanzania_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			buha_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kenya_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			buzinza_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	zan_access_lake_victoria = {
+		required_missions = { zan_delve_into_kongo }
+		icon = mission_conquer_benin
+		provinces_to_highlight = {
+			OR = {
+				area = tanzania_area
+				area = buha_area
+				area = kenya_area
+				area = buzinza_area
+			}
+		}
+		trigger = {
+			tanzania_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			buha_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kenya_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			buzinza_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 100
+			add_prestige = 25
+		}
+	}
+}
+kilwa_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = ZAN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	zan_raise_the_spears = {
+		position = 1
+		icon = mission_assemble_an_army
+		required_missions = { }
+		trigger = {
+			army_size_percentage = 1
+		}
+		effect = {
+			zimbabwe_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			butua_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_zambezi_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mombasa_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			northern_swahili_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+        }
+    }
+	zan_push_up_coast = {
+		required_missions = { zan_raise_the_spears }
+		icon = mission_unite_home_region
+		provinces_to_highlight = {
+			OR = {
+				area = mombasa_area
+				area = northern_swahili_coast_area
+			}
+		}
+		trigger = {
+			mombasa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			northern_swahili_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			sakalava_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			southern_madagascar = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			madagascar_highlands_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			betsimasaraka_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	zan_invade_madagascar = {
+		required_missions = { zan_push_up_coast }
+		icon =  mission_invade_kanem 
+		provinces_to_highlight = {
+            OR = {
+                area = sakalava_area
+                area = southern_madagascar
+                area = madagascar_highlands_area
+                area = betsimasaraka_area
+            }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+        }
+		trigger = {
+			sakalava_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			southern_madagascar = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			madagascar_highlands_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			betsimasaraka_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 50
+			add_country_modifier = {
+				name = zan_secured_coastline
+				duration = 9125
+			}
+		}
+	}
+	zan_affirm_zanzibar_control = {
+		required_missions = { }
+		icon = mission_trade_company_region_abroad
+		provinces_to_highlight = {
+			province_id = 1448
+			has_discovered = ROOT
+		}
+		trigger = {
+			1448 = {		# Zanzibar
+				trade_share = {
+				country = ROOT
+				share = 75
+				}
+			}
+		}
+		effect = {
+			add_years_of_income = 0.5
+			add_country_modifier = {
+				name = zan_zanzibar_chokepoint
+				duration = -1
+			}
+		}
+	}
+	zan_control_spice_trade = {
+		required_missions = { zan_affirm_zanzibar_control zan_control_cape }
+		icon = mission_rb_colonise_spice_islands
+		position = 5
+		provinces_to_highlight = {
+			province_id = 1361
+			has_discovered = ROOT
+		}
+		trigger = {
+			1361 = {		# Malacca
+				is_strongest_trade_power = ROOT
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+			add_prestige = 50
+		}
+	}
+}
+kilwa_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = ZAN
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	zan_construct_expedition_fleet = {
+		position = 3
+		required_missions = { zan_push_up_coast }
+		icon = mission_establish_high_seas_navy
+		trigger = {
+			num_of_heavy_ship = 3
+		}
+		effect = {
+			create_explorer = {
+				tradition = 25
+			}
+			add_country_modifier = {
+				name = zan_asia_expedition
+				duration = 18250
+			}
+		}
+	}
+	zan_control_cape = {
+		required_missions = { zan_construct_expedition_fleet }
+		icon = mission_sea_battles
+		provinces_to_highlight = {
+			province_id = 1177
+			has_discovered = ROOT
+		}
+		trigger = {
+			1177 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			1177 = {
+				add_base_tax = 1
+				add_base_production = 1
+				add_base_manpower = 1
+			}
+			1248 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	zan_base_india_ocean = {
+		required_missions = { }
+		icon = mission_junk_boat
+		provinces_to_highlight = {
+			province_id = 1248
+			has_discovered = ROOT
+		}
+		trigger = {
+			1248 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			lanka_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			south_lanka_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	zan_seize_ceylon = {
+		required_missions = { zan_base_india_ocean }
+		icon = mission_indian_trade_company
+		provinces_to_highlight = {
+			OR = {
+                area = lanka_area
+                area = south_lanka_area
+            }
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			has_discovered = ROOT
+		}
+		trigger = {
+			lanka_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			south_lanka_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = zan_coromandel_base
+				duration = 18250
+			}
+		}
+	}
+}

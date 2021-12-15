@@ -1,0 +1,49 @@
+country_decisions = {
+    colonist_1 = {
+        major = yes
+        potential = {
+            is_colonial_nation = no # Must not be a colonial nation to see the decision.
+            technology_group = western # Must be Western tech group to see the decision.
+            is_institution_enabled = new_world_i # Colonialism must be enabled to see the decision.
+			NOT = { has_country_flag = has_colonist_1 }
+        }
+
+        allow = {
+            has_institution = new_world_i # Colonialism must be embraced to complete the decision.
+            treasury = 1000 # Must have at least 1000 gold.
+        }
+
+        effect = {
+			set_country_flag = has_colonist_1
+            add_treasury = -1000 # Deduct 1000 gold.
+			add_country_modifier = {
+				name = "mrm_colonist_1"
+				duration = -1
+			}
+        }
+    }
+
+    colonist_1_non_western = {
+        major = yes
+        potential = {
+            is_colonial_nation = no # Must not be a colonial nation to see the decision.
+            NOT = { technology_group = western } # Must be Non-Western tech group to to see the decision.
+            is_institution_enabled = printing_press # Printing Press must be enabled to see the decision.
+			NOT = { has_country_flag = has_colonist_1 }
+        }
+
+        allow = {
+            has_institution = printing_press # Printing Press must be embraced to complete the decision.
+            treasury = 1000 # Must have at least 1000 gold.
+        }
+
+        effect = {
+			set_country_flag = has_colonist_1
+            add_treasury = -1000 # Deduct 1000 gold.
+			add_country_modifier = {
+				name = "mrm_colonist_1"
+				duration = -1
+			}
+        }
+    }
+}

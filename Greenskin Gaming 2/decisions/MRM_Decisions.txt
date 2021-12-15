@@ -1,0 +1,202 @@
+country_decisions = {
+    sm_hire_general = {
+			potential = {
+				ai = no
+				NOT = { has_country_flag = sm_hire_general }
+			}
+			allow = {
+				NOT = { army_tradition = 40 }
+			}
+			effect = {
+				add_years_of_income = -0.4
+				create_general = { tradition = 40 }
+				set_country_flag = sm_hire_general
+			}
+		}
+    educate_ruler = {
+		major = yes
+		potential = {
+			ai = no
+			NOT = { has_country_flag = educate_ruler_flag }
+			NOT = {
+				government = republic
+			}
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = educate_ruler_tooltip
+				OR = {
+					NOT = {
+						adm = 3
+						dip = 3
+						mil = 3
+					}
+					NOT = {
+						adm = 5
+						dip = 2
+						mil = 2
+					}
+					NOT = {
+						adm = 2
+						dip = 5
+						mil = 2
+					}
+					NOT = {
+						adm = 2
+						dip = 2
+						mil = 5
+					}
+					NOT = {
+						adm = 4
+						dip = 2
+						mil = 3
+					}
+					NOT = {
+						adm = 4
+						dip = 3
+						mil = 2
+					}
+					NOT = {
+						adm = 3
+						dip = 4
+						mil = 2
+					}
+					NOT = {
+						adm = 2
+						dip = 4
+						mil = 3
+					}
+					NOT = {
+						adm = 2
+						dip = 3
+						mil = 4
+					}
+					NOT = {
+						adm = 3
+						dip = 2
+						mil = 4
+					}
+				}
+			}
+		}
+		effect = {
+			change_adm = 1
+			change_dip = 1
+			change_mil = 1
+			add_years_of_income = -0.5
+			set_country_flag = educate_ruler_flag
+		}
+	}
+	invite_sufi_warriors = {
+		potential = {
+			NOT = { has_ruler_modifier = sufi_warriors }
+            NOT = { has_ruler_modifier = the_khalifah }
+            religion_group = muslim
+			NOT = { government = republic }
+		}
+		allow = {
+			mil = 3
+			has_regency = no
+			is_female = no
+		}
+		effect = {	
+			add_ruler_modifier = {
+				name = "sufi_warriors"
+				duration = -1
+			}
+			add_piety = -0.10
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { 
+				NOT = { piety = 0.1 }
+				factor = 0
+			}
+		}
+	}
+	
+	tolerate_the_mystics = {
+		potential = {
+			NOT = { has_ruler_modifier = sect_practices }
+            NOT = { has_ruler_modifier = mystic_tolerance }
+			religion_group = muslim
+		}
+		allow = {
+			dip = 3
+			has_regency = no
+		}
+		effect = {	
+			add_ruler_modifier = {
+				name = "mystic_tolerance"
+				duration = -1
+			}
+			add_piety = -0.10
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { 
+				NOT = { piety = -0.1 }
+				factor = 0
+			}			
+		}
+	}
+	
+	islamic_centre_of_arts = {
+		potential = {
+			NOT = { has_ruler_modifier = islamic_scholarly_centre }
+            NOT = { has_ruler_modifier = islamic_arts_encouraged }
+			religion_group = muslim
+			adm_tech = 8
+		}
+		allow = {
+			adm = 5
+			has_regency = no
+		}
+		effect = {	
+			add_ruler_modifier = {
+				name = "islamic_arts_encouraged"
+				duration = -1
+			}
+			add_piety = -0.25
+		}
+		ai_will_do = {
+			factor = 1
+			modifier = { 
+				NOT = { piety = -0.1 }
+				factor = 0
+			}			
+		}
+	}
+		#From Dave and PR Mod
+		PR_critical_events = {
+		major = yes
+		potential = {
+			ai = no
+		}
+		ai_will_do = {
+			factor = 0
+		}
+		allow = {
+			custom_trigger_tooltip = {
+				tooltip = PR_radical_reform_decision
+				NOT = { has_country_flag = radical_mercantilist_reforms }
+			}
+			custom_trigger_tooltip = {
+				tooltip = PR_military_reform_decision
+				NOT = { has_country_flag = military_reform }
+			}
+			custom_trigger_tooltip = {
+				tooltip = PR_commandant_decision
+				NOT = { has_country_flag = commandant }
+			}
+			custom_trigger_tooltip = {
+				tooltip = PR_grand_captain_decision
+				NOT = { has_country_flag = grand_captain }
+			}
+			always = no
+		}
+		effect = {
+		}
+	}
+
+}

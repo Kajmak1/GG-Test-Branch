@@ -1,0 +1,2 @@
+# It never happened!
+# Removed this war because it caused Naples to not have a truce with Sicily, even with the Sicilian Independence War history file.

@@ -1,0 +1,328 @@
+kongo_missions = {
+#made by zector
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = KON
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	kon_unify_kongolese_people = {
+		position = 1
+		icon = mission_have_two_subjects
+		required_missions = { }
+		provinces_to_highlight = {
+			province_id = 1169
+			has_discovered = ROOT
+		}
+		trigger = {
+			1169 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = kon_unified_culture
+				duration = 9125
+			}
+			kasai_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_kasai = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	kon_integrate_kasai = {
+		icon = mission_unite_home_region
+		required_missions = { kon_unify_kongolese_people }
+		provinces_to_highlight = {
+			OR = {
+				area = kasai_area
+				area = lower_kasai
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			kasai_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_kasai = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 25
+			luba_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	kon_control_luba = {
+		icon = mission_invade_kanem
+		position = 4
+		required_missions = { kon_integrate_kasai }
+		provinces_to_highlight = {
+			province_id = 4097
+			has_discovered = ROOT
+		}
+		trigger = {
+			4097 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_years_of_income = 1
+			4109 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			rwanda_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			chokwe_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			zambia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	kon_foothold_in_great_lakes = {
+		icon = mission_unite_home_region
+		required_missions = { kon_control_luba }
+		provinces_to_highlight = {
+			OR = {
+				area = rwanda_area
+			}
+		}
+		trigger = {
+			rwanda_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			buha_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			buzinza_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			uganda_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			bunyoro_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	kon_oasis_of_africa = {
+		icon = mission_invade_kanem
+		required_missions = { kon_foothold_in_great_lakes }
+		provinces_to_highlight = {
+			province_id = 4064
+			has_discovered = ROOT
+		}
+		trigger = {
+			4064 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 50
+			add_prestige = 15
+		}
+	}
+}
+kongo_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = KON
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	kon_centralize_kongo = {
+		icon = mission_monarch_in_throne_room
+		position = 2
+		required_missions = { kon_unify_kongolese_people }
+		provinces_to_highlight = {
+			province_id = 1170
+			has_discovered = ROOT
+		}
+		trigger = {
+			1170 = {
+				development = 15
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = kon_centralized_power
+				duration = 9125
+			}
+			1170 = {
+				add_institution_embracement = {
+					which = feudalism
+					value = 100
+				}
+			}
+		}
+	}
+	kon_develop_industry = {
+		icon = mission_colonial
+		required_missions = { kon_centralize_kongo }
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 10
+				has_manufactory_trigger = yes
+			}
+		}
+		effect = {
+			add_years_of_income = 2
+			add_country_modifier = {
+				name = kon_kongolese_industry
+				duration = 9125
+			}
+		}
+	}
+	kon_ivory_market = {
+		icon = mission_dominate_home_trade_node
+		required_missions = { kon_develop_industry }
+		trigger = {
+			production_leader = {
+				trade_goods = ivory
+				value = yes
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = kon_ivory_monopoly
+				duration = -1
+			}
+		}
+	}
+	kon_zambia_passage = {
+		icon = mission_unite_home_region
+		required_missions = { kon_control_luba }
+		provinces_to_highlight = {
+			OR = {
+				area = chokwe_area
+				area = zambia_area
+			}
+		}
+		trigger = {
+			chokwe_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zambia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			lower_zambezi_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			zimbabwe_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			butua_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	kon_zimbabwe_gold = {
+		icon = mission_african_gold
+		required_missions = { kon_zambia_passage }
+		provinces_to_highlight = {
+			OR = {
+				area = lower_zambezi_area
+				area = zimbabwe_area
+				area = butua_area
+			}
+		}
+		trigger = {
+			lower_zambezi_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			zimbabwe_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			butua_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 25
+			add_years_of_income = 2
+			add_country_modifier = {
+				name = kon_gold_rush
+				duration = 9125
+			}
+		}
+	}
+}

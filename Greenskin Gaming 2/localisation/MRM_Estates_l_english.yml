@@ -1,0 +1,14 @@
+﻿l_english:
+
+ estate_clergy_exploration_expedition:0 "Clergy Exploration Expeditions"
+ estate_clergy_exploration_expedition_desc:0 "[Root.GetClergyName] roam our unexplored frontiers, shifting them back year by year. We should harness their pioneering instincts to accelerate our settlement of these areas."
+ estate_clergy_exploration_expedition_mod:0 "Clergy Exploration"
+ desc_estate_clergy_exploration_expedition_mod:0 "We are harnessing the pioneering instincts of the clergy to accelerate the settlement and growth of this area."
+ decision_once_every_twenty_years:0 "This decision can only be taken once every §Y20§! years."
+ estate_clergy_exploration_expedition_effect_tooltip:1 "§G-20%§! local development cost in all §YDesert§! provinces"
+ estate_clergy_exploration_expedition_mod_revoke_tooltip:0 "Removes §YClergy Exploration§! from all owned §YDesert§! provinces."
+
+ mrm_estate_rajput_levies:0 "Increased Levies"
+ mrm_estate_rajput_levies_desc:0 "Levies from the Rajputs provide the majority of our nation's armies. An arrangement can be made for them to provide us with more men in return for other compensation."
+ estate_church_mysticism_privilege:0 "Encourage the Sufi Scholars"
+ estate_church_mysticism_privilege_desc:0 "The increased influence of Sufi scholars has increased our national pride and encouraged much interest in the nobility in escoteric things and the arts."

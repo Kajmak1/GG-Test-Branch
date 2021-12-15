@@ -1,0 +1,44 @@
+wine_modifier = {
+	potential = {
+		normal_or_historical_nations = yes
+	}
+
+	trigger = {
+		owner = {
+			religion=orthodox
+		}
+	}
+
+	trade_goods_size= 1
+	
+	#Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}
+
+nepalese_wool = {
+    potential = {
+		normal_or_historical_nations = yes
+	}
+	trigger = {
+	 owner = {
+	 religion_group = eastern
+	 }
+	 }
+	 trade_goods_size = 1
+	 #Province scope
+	on_activation = {
+	
+	}
+	
+	on_deactivation = {
+	
+	}
+	
+}

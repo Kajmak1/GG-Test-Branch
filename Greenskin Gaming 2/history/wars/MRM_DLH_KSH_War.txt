@@ -1,0 +1,18 @@
+# The purpose of this file is to give DLH a truce with KSH.
+
+name = "DLH - KSH War"
+war_goal = {
+    type = take_claim
+    casus_belli = cb_conquest
+	province = 2077 #margalla
+}
+# War start date
+1443.1.1 = {
+	add_attacker = DLH
+	add_defender = KSH
+}
+# War end date
+1444.9.10 = {
+    	rem_attacker = DLH
+	    rem_defender = KSH
+}

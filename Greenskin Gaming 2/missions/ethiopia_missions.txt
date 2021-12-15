@@ -1,0 +1,417 @@
+ethiopia_missions = {
+	#courtesy of exector (spelling my name wrong i see)
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = ETH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	eth_stabilize_ethiopia = {
+		position = 1
+		icon = mission_restore_faith_in_the_throne
+		required_missions = { }
+		trigger = {
+			NOT = { num_of_rebel_armies = 1 }
+            NOT = { num_of_rebel_controlled_provinces = 1 }
+			stability = 1
+        }
+		effect = {
+			add_legitimacy = 10
+			add_prestige = 10
+			southern_ethiopia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            hadiya_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	eth_consolidate_the_south = {
+		icon = mission_unite_home_region
+		required_missions = { eth_stabilize_ethiopia }
+		provinces_to_highlight = {
+			OR = {
+				area = southern_ethiopia_area
+				area = hadiya_area
+			}
+		}
+		trigger	= {
+			southern_ethiopia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			hadiya_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+
+		effect = {
+            add_adm_power = 100
+			country_event = { id = mrm_ethiopia.1 }
+			aussa_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+            ifat_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			sennar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_nubia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_nubia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			dongola_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	eth_destroy_adal = {
+		icon = mission_unite_home_region
+		required_missions = { eth_consolidate_the_south }
+		provinces_to_highlight = {
+			OR = {
+				area = aussa_area
+				area = ifat_area
+			}
+		}
+		trigger	= {
+			aussa_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ifat_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_prestige = 25
+			add_mil_power = 50
+			ogaden_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			somaliland_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			majarteen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			ajuuran_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			mogadishu_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tihama_al_yemen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_yemen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			yemen_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	eth_foothold_in_yemen = {
+		position = 4
+		icon = mission_conquer_aden
+		required_missions = { eth_destroy_adal }
+		provinces_to_highlight = {
+			OR = {
+				area = tihama_al_yemen_area
+				area = upper_yemen_area
+				area = yemen_area
+			}
+		}
+		trigger = {
+			tihama_al_yemen_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			upper_yemen_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			yemen_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 75
+			add_country_modifier = {
+				name = conquest_of_yemen
+				duration = 3650 #10 years
+			}
+			mahra_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			hadramut_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			dhofar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			asir_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+        }
+	}
+	eth_master_of_aden = {
+		required_missions = { eth_foothold_in_yemen }
+		icon = mission_central_asian_city
+		provinces_to_highlight = {
+			province_id = 4346
+			has_discovered = ROOT
+		}
+		trigger = {
+			4346 = {		# Aden
+				trade_share = {
+				country = ROOT
+				share = 75
+				}
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = eth_aden_master
+				duration = 7300
+			}
+		}
+	}
+}
+
+ethiopia_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = ETH
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	eth_affirm_faith = {
+		position = 1
+		required_missions = { }
+		icon = prester_john
+		trigger = {
+			OR = {
+				NOT = {
+					religion = coptic
+				}
+				religious_unity = 1
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = eth_affirmed_faith
+				duration = -1
+			}
+		}
+	}
+	eth_integrate_nubia = {
+		position = 3
+		icon = mission_unite_home_region
+		required_missions = { eth_consolidate_the_south }
+		provinces_to_highlight = {
+			OR = {
+				area = upper_nubia_area
+				area = lower_nubia_area
+				area = dongola_area
+			}
+		}
+		trigger	= {
+			upper_nubia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_nubia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			dongola_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 75
+			add_country_modifier = {
+				name = conquest_of_nubia
+				duration = 3650 #10 years
+			}
+		}
+	}
+	eth_crush_somali_kingdoms = {
+		required_missions = { eth_integrate_nubia }
+		icon = mission_conquer_50_development
+		provinces_to_highlight = {
+			OR = {
+				area = somaliland_area
+				area = majarteen_area
+				area = ajuuran_area
+				area = mogadishu_area
+			}
+		}
+		trigger = {
+			somaliland_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			majarteen_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			ajuuran_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			mogadishu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			jubba_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			northern_swahili_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	eth_zanzibar_outpost = {
+		required_missions = { eth_crush_somali_kingdoms }
+		icon = mission_conquer_50_development
+		provinces_to_highlight = {
+			OR = {
+				area = jubba_area
+				area = northern_swahili_coast_area
+			}
+		}
+		trigger = {
+			jubba_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			northern_swahili_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			limit = {
+					1204 = {
+						NOT = {
+							has_building = fort_15th
+						}
+						NOT = {
+							has_building = fort_15th
+						}
+					}
+				}
+				1204 = {
+					add_building = fort_15th
+				}
+			add_country_modifier = {
+				name = eth_zanzibar_fort
+				duration = 3650
+			}
+		}
+	}
+}

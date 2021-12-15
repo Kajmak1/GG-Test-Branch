@@ -1,0 +1,28 @@
+﻿l_english:
+
+ CMO:0 "Cameroon"
+ CMO_ADJ:0 "Cameroonian"
+
+ LGW:0 "Luangwa"
+ LGW_ADJ:0 "Luangwan"
+
+ MGB:0 "Maghreb"
+ MGB_ADJ:0 "Maghrebi"
+
+ NAN:0 "Nanjing"
+ NAN_ADJ:0 "Nanjing"
+
+ TNZ:0 "Tanzania"
+ TNZ_ADJ:0 "Tanzanian"
+
+ SHB:0 "Shamba"
+ SHB_ADJ:0 "Shamban"
+ 
+ SIA:0 "Siam"
+ SIA_ADJ:0 "Siamese"
+ 
+ ZUL:0 "Zulu"
+ ZUL_ADJ:0 "Zulu"
+
+ TUN_Empire:0 "Emirate Of Sicily"
+ TUN_Empire_ADJ:0 "Emirate Of Sicily"

@@ -1,0 +1,29 @@
+namespace = mrm_denmark
+normal_or_historical_nations = yes
+
+#Give Denmark a Restoration of Union casus belli on Sweden at game start.
+country_event = { 
+    id = mrm_denmark.1
+	title = "mrm_denmark.event_1_title"
+	desc = "mrm_denmark.event_1_desc"
+	picture = MRM_Logo
+
+	fire_only_once = yes
+
+    trigger = {
+		tag = DAN
+	}
+
+    mean_time_to_happen = {
+		days = 1
+	}
+
+    option = {
+        name = "mrm_denmark.1_option_1"
+        add_casus_belli = {	
+			target = SWE
+			type = cb_restore_personal_union
+			months = 300
+		}
+    }
+}

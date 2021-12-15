@@ -1,0 +1,533 @@
+songhai_missions = {
+	#courtesy of exector
+	slot = 1
+	generic = no
+	ai = yes
+	potential = {
+		tag = SON
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	son_build_up_the_military = {
+		position = 1
+		icon = mission_assemble_an_army
+		required_missions = { }
+		trigger = {
+			army_size_percentage = 1
+			manpower_percentage = 0.7
+		}
+		effect = {
+			add_country_modifier = {
+				name = son_empowered_army
+				duration = 5475
+			}
+			niger_bend_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	son_conquer_timbuktu = {
+		icon = mission_conquer_timbuktu
+		required_missions = { son_build_up_the_military }
+		provinces_to_highlight = {
+			province_id = 1132
+			has_discovered = ROOT
+		}
+		trigger = {
+			1132 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			1132 = {
+				add_base_manpower = 3
+				add_prestige = 15
+			}
+		}
+	}
+	son_strengthen_saharan_trade = {
+		icon = mission_saharan_route
+		required_missions = { son_conquer_timbuktu }
+		provinces_to_highlight = {
+			province_id = 1132
+			has_discovered = ROOT
+		}
+		trigger = {
+			1132 = {		# Timbuktu
+				is_strongest_trade_power = ROOT
+			}
+		}
+		effect = {
+			add_years_of_income = 0.5
+			1127 = {
+				if = {
+					limit = {
+						is_empty = yes
+					}
+					add_core = ROOT
+					cede_province = ROOT
+				}
+			}
+			sus_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			tafilalt_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			1132 = {
+				add_province_modifier = {
+					name = ghn_center_of_west_africa
+					duration = 5475
+				}
+			}
+		}
+	}
+	son_moroccan_gold = {
+		icon = mission_african_gold
+		required_missions = { son_strengthen_saharan_trade }
+		provinces_to_highlight = {
+			OR = {
+				area = tafilalt_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			346 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 50
+			southern_morocco_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	son_capitalize_saharan_trade = {
+		icon = mission_traverse_the_sahara
+		required_missions = { son_moroccan_gold }
+		provinces_to_highlight = {
+			OR = {
+				area = southern_morocco_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			southern_morocco_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			1128 = {
+				center_of_trade = 1
+			}
+			add_adm_power = 75
+			add_years_of_income = 1
+		}
+	}
+}
+songhai_missions_2 = {
+	slot = 2
+	generic = no
+	ai = yes
+	potential = {
+		tag = SON
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	son_develop_songhai_manufacturing = {
+		icon = mission_colonial
+		required_missions = { }
+		trigger = {
+			num_of_owned_provinces_with = {
+				value = 10
+				has_manufactory_trigger = yes
+			}
+		}
+		effect = {
+			add_years_of_income = 3
+			add_country_modifier = {
+				name = ghn_ghanaian_manufacturing
+				duration = 9125
+			}
+		}
+	}
+	son_control_katsina = {
+		icon = mission_invade_kanem
+		position = 4
+		required_missions = { son_strengthen_saharan_trade }
+		provinces_to_highlight = {
+			OR = {
+				area = katsina_area
+			}
+			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+		}
+		trigger = {
+			katsina_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			bornu_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kanem_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			azbin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			east_azbin_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	son_conquer_kanem_bornu = {
+		icon = mission_conquer_kanem_bornu
+		required_missions = { son_control_katsina }
+		provinces_to_highlight = {
+			OR = {
+				area = kanem_area
+				area = bornu_area
+			}
+		}
+		trigger = {
+			kanem_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			bornu_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			2932 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			774 = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	son_expand_east = {
+		icon = mission_unite_home_region
+		required_missions = { son_conquer_kanem_bornu }
+		provinces_to_highlight = {
+			OR = {
+				area = darfur_central_sahara_area
+				area = kurdufan_area
+			}
+		}
+		trigger = {
+			darfur_central_sahara_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			kurdufan_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = ghn_eastern_influence
+				duration = -1
+			}
+			add_adm_power = 50
+			add_mil_power = 50
+			sennar_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			dongola_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			lower_nubia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			upper_nubia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	son_expand_into_nubia = {
+		icon = mission_unite_home_region
+		required_missions = { son_expand_east }
+		provinces_to_highlight = {
+			OR = {
+				area = lower_nubia_area
+				area = upper_nubia_area
+				area = dongola_area
+				area = sennar_area
+			}
+		}
+		trigger = {
+			sennar_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			dongola_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			upper_nubia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			lower_nubia_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_mil_power = 100
+			add_prestige = 15
+		}
+	}
+}
+songhai_missions_3 = {
+	slot = 3
+	generic = no
+	ai = yes
+	potential = {
+		tag = SON
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	son_develop_timbuktu = {
+		icon = mission_invade_mali
+		required_missions = { }
+		provinces_to_highlight = {
+			province_id = 1132
+			has_discovered = ROOT
+		}
+		trigger = {
+			1132 = {		# Timbuktu
+				development = 25
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			add_country_modifier = {
+				name = ghn_renovated_timbuktu
+				duration = 9125
+			}
+		}
+	}
+	son_center_of_learning = {
+		icon = mission_conquer_timbuktu
+		required_missions = { son_develop_timbuktu }
+		trigger = {
+			university = 8
+		}
+		effect = {
+			capital_scope = {
+				area = {
+					add_next_institution_embracement = 50
+				}
+			}
+			add_country_modifier = {
+				name = ghn_scholars
+				duration = 7300
+			}
+		}
+	}
+	son_sieze_mali_capital = {
+		icon = mission_invade_mali
+		required_missions = { son_conquer_timbuktu }
+		provinces_to_highlight = {
+			province_id = 1124
+			has_discovered = ROOT
+		}
+		trigger = {
+			1124 = {
+				owned_by = ROOT
+			}
+		}
+		effect = {
+			manding_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			futa_jallon_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	son_end_mali_empire = {
+		icon = mission_invade_mali
+		required_missions = { son_sieze_mali_capital }
+		provinces_to_highlight = {
+			owned_by = MAL
+		}
+		trigger ={
+			NOT = { exists = MAL }
+		}
+		effect = {
+			add_mil_power = 100
+			add_prestige = 20
+		}
+	}
+}
+songhai_missions_4 = {
+	slot = 4
+	generic = no
+	ai = yes
+	potential = {
+		tag = SON
+		NOT = { map_setup = map_setup_random }
+	}
+	has_country_shield = yes
+	son_secure_benin = {
+		icon = mission_conquer_benin
+		required_missions = { }
+		provinces_to_highlight = {
+			OR = {
+				area = benin_area
+			}
+		}
+		trigger = {
+			benin_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			west_africa_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			guinea_coast_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			add_country_modifier = {
+				name = ghn_expansionism
+				duration = 18250
+			}
+		}
+	}
+	son_control_ivory_coast = {
+		icon = mission_colonial
+		required_missions = { son_secure_benin }
+		provinces_to_highlight = {
+			OR = {
+				area = west_africa_coast_area
+				area = guinea_coast_area
+			}
+		}
+		trigger = {
+			guinea_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+			west_africa_coast_area = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			create_explorer = {
+				tradition = 25
+			}
+			coastal_kongo = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+		}
+	}
+	son_kongo_frontier = {
+		icon = mission_invade_kanem
+		required_missions = { son_control_ivory_coast }
+		provinces_to_highlight = {
+			OR = {
+				area = coastal_kongo
+			}
+		}
+		trigger = {
+			coastal_kongo = {
+				type = all
+				country_or_non_sovereign_subject_holds = ROOT
+			}
+		}
+		effect = {
+			add_adm_power = 50
+			add_dip_power = 50
+			add_mil_power = 50
+		}
+	}
+}

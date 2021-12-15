@@ -1,0 +1,7 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "MRM_Mission_Icon"
+		texturefile = "gfx//interface//missions//MRM.dds"
+	}
+}

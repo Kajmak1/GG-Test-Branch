@@ -1,0 +1,14 @@
+# North Africa
+MGB = "countries/Maghreb.txt"
+
+# African Filler countries
+LGW = "countries/Luangwa.txt"
+SHB = "countries/Shamba.txt"
+TNZ = "countries/Tanzania.txt"
+CMO = "countries/Cameroon.txt"
+
+# East Africa
+ZUL = "countries/Zulu.txt"
+
+# 1.31 Siam
+SIA = "countries/Siam.txt"
