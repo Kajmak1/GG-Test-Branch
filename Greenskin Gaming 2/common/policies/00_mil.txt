@@ -1,950 +1,559 @@
-thicker_shields = {
+disciplinary_measures = {
 	monarch_power = MIL
-	
 	potential = {
 		adm_tech = 5
 	}
-	
 	allow = {
 		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = diplomatic_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = plutocracy_ideas
+		full_idea_group = innovativeness_ideas
+		full_idea_group = religious_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = diplomatic_ideas
 		full_idea_group = offensive_ideas
 		full_idea_group = defensive_ideas
 		full_idea_group = trade_ideas
 		full_idea_group = economic_ideas
 		full_idea_group = exploration_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = quality_ideas
 		full_idea_group = quantity_ideas
 		full_idea_group = expansion_ideas
-		full_idea_group = maritime_ideas
 		full_idea_group = administrative_ideas
-		full_idea_group = spy_ideas
 		full_idea_group = humanist_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = indigenous_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
 		amount = 1
 		}
 	}
-	
-	shock_damage_received = -0.1
-
-	ai_will_do = {
-		factor = 2
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+		discipline = 0.05
 }
 
-7_nation_army = {
+peasant_suppression = {
 	monarch_power = MIL
-	
 	potential = {
 		adm_tech = 5
 	}
-	
 	allow = {
 		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = diplomatic_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = plutocracy_ideas
+		full_idea_group = innovativeness_ideas
+		full_idea_group = religious_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = diplomatic_ideas
 		full_idea_group = offensive_ideas
 		full_idea_group = defensive_ideas
 		full_idea_group = trade_ideas
 		full_idea_group = economic_ideas
 		full_idea_group = exploration_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = quality_ideas
 		full_idea_group = quantity_ideas
 		full_idea_group = expansion_ideas
-		full_idea_group = maritime_ideas
 		full_idea_group = administrative_ideas
-		full_idea_group = spy_ideas
 		full_idea_group = humanist_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = indigenous_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
 		amount = 1
 		}
 	}
-	
-	vassal_forcelimit_bonus = 0.5
-
-	ai_will_do = {
-		factor = 0.01
-		modifier = {
-			factor = 100
-			vassal = 1
-		}
-		modifier = {
-			factor = 100
-			vassal = 2
-		}
-	}
-}
-
-noble_captains = {
-	monarch_power = MIL
-
-	potential = {
-		adm_tech = 5
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = expansion_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = administrative_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = indigenous_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		amount = 1
-		}
-		
-	}
-	
-	land_morale = 0.05
-	
-	ai_will_do = {
-		factor = 2
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
-}
-
-longer_lances = {
-	monarch_power = MIL
-	
-	potential = {
-		adm_tech = 7
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = expansion_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = administrative_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = indigenous_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		amount = 2
-		}
-	}
-	
-	cavalry_power = 0.10
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 50
-			is_at_war = yes
-			has_reform = steppe_horde
-		}
-	}
-}
-
-forced_conscription = {
-	monarch_power = MIL
-	
-	potential = {
-		adm_tech = 7
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = expansion_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = administrative_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = indigenous_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		amount = 2
-		}
-	}
-	
-	global_manpower_modifier = 0.2
-
-	ai_will_do = {
-		factor = 2
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
-}
-	
-maternal_leave_act = {
-	monarch_power = MIL
-	
-	potential = {
-		adm_tech = 7
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = expansion_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = administrative_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = indigenous_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		amount = 2
-		}
-	}
-	
-	manpower_recovery_speed = 0.15
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
-}
-
-grunt_to_general = {
-	monarch_power = MIL
-	
-	potential = {
-		adm_tech = 10
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = expansion_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = administrative_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = indigenous_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		amount = 3
-		}
-	}
-	
-	army_tradition = 0.5
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
-}
-
-payment_in_loot = {
-	monarch_power = MIL
-	
-	potential = {
-		adm_tech = 10
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = expansion_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = administrative_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = indigenous_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		amount = 3
-		}
-	}
-	
-	global_regiment_cost = -0.1
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
-}
-
-bunk_bed_barracks = {
-	monarch_power = MIL
-	
-	potential = {
-		adm_tech = 10
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = expansion_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = administrative_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = indigenous_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		amount = 3
-		}
-	}
-	
-	garrison_size = 0.40
-
-	ai_will_do = {
-		factor = 0.5
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
-}
-
-sabotage_act = {
-	monarch_power = MIL
-	
-	potential = {
-		adm_tech = 14
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = expansion_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = administrative_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = indigenous_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		amount = 4
-		}
-	}
-	
-	hostile_attrition = 1.0
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
-}
-
-paper_shoes = {
-	monarch_power = MIL
-	
-	potential = {
-		adm_tech = 14
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = expansion_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = administrative_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = indigenous_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		amount = 4
-		}
-	}
-	
-	land_maintenance_modifier = -0.10
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
-}
-
-3_star_track_star = {
-	monarch_power = MIL
-	
-	potential = {
-		adm_tech = 14
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = expansion_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = administrative_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = indigenous_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		amount = 4
-		}
-	}
-	
-	leader_land_manuever = 1
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
-}
-
-deeper_moat = {
-	monarch_power = MIL
-	
-	potential = {
-		adm_tech = 18
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = expansion_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = administrative_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = indigenous_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		amount = 5
-		}
-	}
-	
-	defensiveness = 0.25
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+		global_unrest = -2
 }
 
 relentless_drill = {
 	monarch_power = MIL
-	
 	potential = {
-		adm_tech = 18
+		adm_tech = 5
 	}
-	
 	allow = {
 		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = diplomatic_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = plutocracy_ideas
+		full_idea_group = innovativeness_ideas
+		full_idea_group = religious_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = diplomatic_ideas
 		full_idea_group = offensive_ideas
 		full_idea_group = defensive_ideas
 		full_idea_group = trade_ideas
 		full_idea_group = economic_ideas
 		full_idea_group = exploration_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = quality_ideas
 		full_idea_group = quantity_ideas
 		full_idea_group = expansion_ideas
-		full_idea_group = maritime_ideas
 		full_idea_group = administrative_ideas
-		full_idea_group = spy_ideas
 		full_idea_group = humanist_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = indigenous_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		amount = 5
+		amount = 1
 		}
 	}
-	
-	discipline = 0.05
-
-	ai_will_do = {
-		factor = 10
-		modifier = {
-			factor = 5
-			is_at_war = yes
-		}
-	}
+		drill_gain_modifier = 0.25
 }
 
-vigilant_act = {
+expanded_officer = {
 	monarch_power = MIL
-	
 	potential = {
-		adm_tech = 18
+		adm_tech = 7
 	}
-	
 	allow = {
 		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = diplomatic_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = plutocracy_ideas
+		full_idea_group = innovativeness_ideas
+		full_idea_group = religious_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = diplomatic_ideas
 		full_idea_group = offensive_ideas
 		full_idea_group = defensive_ideas
 		full_idea_group = trade_ideas
 		full_idea_group = economic_ideas
 		full_idea_group = exploration_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = quality_ideas
 		full_idea_group = quantity_ideas
 		full_idea_group = expansion_ideas
-		full_idea_group = maritime_ideas
 		full_idea_group = administrative_ideas
-		full_idea_group = spy_ideas
 		full_idea_group = humanist_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = indigenous_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		amount = 5
+		amount = 2
 		}
 	}
-	
-	army_tradition_decay = -0.01
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+		infantry_power = 0.10
+		cavalry_cost = -0.15
 }
+
+vassal_integration_act = {
+	monarch_power = MIL
+	potential = {
+		adm_tech = 7
+	}
+	allow = {
+		calc_true_if = {
+		full_idea_group = aristocracy_ideas
+		full_idea_group = plutocracy_ideas
+		full_idea_group = innovativeness_ideas
+		full_idea_group = religious_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = diplomatic_ideas
+		full_idea_group = offensive_ideas
+		full_idea_group = defensive_ideas
+		full_idea_group = trade_ideas
+		full_idea_group = economic_ideas
+		full_idea_group = exploration_ideas
+		full_idea_group = maritime_ideas
+		full_idea_group = quality_ideas
+		full_idea_group = quantity_ideas
+		full_idea_group = expansion_ideas
+		full_idea_group = administrative_ideas
+		full_idea_group = humanist_ideas
+		full_idea_group = influence_ideas
+		amount = 2
+		}
+	}
+		diplomatic_annexation_cost = -0.2
+}
+
+relentless_drill_two = {
+	monarch_power = MIL
+	potential = {
+		adm_tech = 7
+	}
+	allow = {
+		calc_true_if = {
+		full_idea_group = aristocracy_ideas
+		full_idea_group = plutocracy_ideas
+		full_idea_group = innovativeness_ideas
+		full_idea_group = religious_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = diplomatic_ideas
+		full_idea_group = offensive_ideas
+		full_idea_group = defensive_ideas
+		full_idea_group = trade_ideas
+		full_idea_group = economic_ideas
+		full_idea_group = exploration_ideas
+		full_idea_group = maritime_ideas
+		full_idea_group = quality_ideas
+		full_idea_group = quantity_ideas
+		full_idea_group = expansion_ideas
+		full_idea_group = administrative_ideas
+		full_idea_group = humanist_ideas
+		full_idea_group = influence_ideas
+		amount = 2
+		}
+	}
+		drill_gain_modifier = 0.25
+}
+
+noble_captains = {
+	monarch_power = MIL
+	potential = {
+		adm_tech = 10
+	}
+	allow = {
+		calc_true_if = {
+		full_idea_group = aristocracy_ideas
+		full_idea_group = plutocracy_ideas
+		full_idea_group = innovativeness_ideas
+		full_idea_group = religious_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = diplomatic_ideas
+		full_idea_group = offensive_ideas
+		full_idea_group = defensive_ideas
+		full_idea_group = trade_ideas
+		full_idea_group = economic_ideas
+		full_idea_group = exploration_ideas
+		full_idea_group = maritime_ideas
+		full_idea_group = quality_ideas
+		full_idea_group = quantity_ideas
+		full_idea_group = expansion_ideas
+		full_idea_group = administrative_ideas
+		full_idea_group = humanist_ideas
+		full_idea_group = influence_ideas
+		amount = 3
+		}
+	}
+		land_morale = 0.10
+}
+
+stability_act = {
+	monarch_power = MIL
+	potential = {
+		adm_tech = 10
+	}
+	allow = {
+		calc_true_if = {
+		full_idea_group = aristocracy_ideas
+		full_idea_group = plutocracy_ideas
+		full_idea_group = innovativeness_ideas
+		full_idea_group = religious_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = diplomatic_ideas
+		full_idea_group = offensive_ideas
+		full_idea_group = defensive_ideas
+		full_idea_group = trade_ideas
+		full_idea_group = economic_ideas
+		full_idea_group = exploration_ideas
+		full_idea_group = maritime_ideas
+		full_idea_group = quality_ideas
+		full_idea_group = quantity_ideas
+		full_idea_group = expansion_ideas
+		full_idea_group = administrative_ideas
+		full_idea_group = humanist_ideas
+		full_idea_group = influence_ideas
+		amount = 3
+		}
+	}
+		stability_cost_modifier = -0.15
+}
+
+peacetime_army = {
+	monarch_power = MIL
+	potential = {
+		adm_tech = 10
+	}
+	allow = {
+		calc_true_if = {
+		full_idea_group = aristocracy_ideas
+		full_idea_group = plutocracy_ideas
+		full_idea_group = innovativeness_ideas
+		full_idea_group = religious_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = diplomatic_ideas
+		full_idea_group = offensive_ideas
+		full_idea_group = defensive_ideas
+		full_idea_group = trade_ideas
+		full_idea_group = economic_ideas
+		full_idea_group = exploration_ideas
+		full_idea_group = maritime_ideas
+		full_idea_group = quality_ideas
+		full_idea_group = quantity_ideas
+		full_idea_group = expansion_ideas
+		full_idea_group = administrative_ideas
+		full_idea_group = humanist_ideas
+		full_idea_group = influence_ideas
+		amount = 3
+		}
+	}
+	    land_maintenance_modifier = -0.90
+		land_morale = -0.50
+}
+
+fire_by_rank = {
+	monarch_power = MIL
+	potential = {
+		adm_tech = 14
+	}
+	allow = {
+		calc_true_if = {
+		full_idea_group = aristocracy_ideas
+		full_idea_group = plutocracy_ideas
+		full_idea_group = innovativeness_ideas
+		full_idea_group = religious_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = diplomatic_ideas
+		full_idea_group = offensive_ideas
+		full_idea_group = defensive_ideas
+		full_idea_group = trade_ideas
+		full_idea_group = economic_ideas
+		full_idea_group = exploration_ideas
+		full_idea_group = maritime_ideas
+		full_idea_group = quality_ideas
+		full_idea_group = quantity_ideas
+		full_idea_group = expansion_ideas
+		full_idea_group = administrative_ideas
+		full_idea_group = humanist_ideas
+		full_idea_group = influence_ideas
+		amount = 4
+		}
+	}
+		fire_damage = 0.15
+} 
+
+vassal_integration_act_two = {
+	monarch_power = MIL
+	potential = {
+		adm_tech = 14
+	}
+	allow = {
+		calc_true_if = {
+		full_idea_group = aristocracy_ideas
+		full_idea_group = plutocracy_ideas
+		full_idea_group = innovativeness_ideas
+		full_idea_group = religious_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = diplomatic_ideas
+		full_idea_group = offensive_ideas
+		full_idea_group = defensive_ideas
+		full_idea_group = trade_ideas
+		full_idea_group = economic_ideas
+		full_idea_group = exploration_ideas
+		full_idea_group = maritime_ideas
+		full_idea_group = quality_ideas
+		full_idea_group = quantity_ideas
+		full_idea_group = expansion_ideas
+		full_idea_group = administrative_ideas
+		full_idea_group = humanist_ideas
+		full_idea_group = influence_ideas
+		amount = 4
+		}
+	}
+		diplomatic_annexation_cost = -0.2
+} 
 
 grandest_army = {
 	monarch_power = MIL
-	
 	potential = {
-		adm_tech = 22
+		adm_tech = 14
 	}
-	
 	allow = {
 		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = diplomatic_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = plutocracy_ideas
+		full_idea_group = innovativeness_ideas
+		full_idea_group = religious_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = diplomatic_ideas
 		full_idea_group = offensive_ideas
 		full_idea_group = defensive_ideas
 		full_idea_group = trade_ideas
 		full_idea_group = economic_ideas
 		full_idea_group = exploration_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = quality_ideas
 		full_idea_group = quantity_ideas
 		full_idea_group = expansion_ideas
-		full_idea_group = maritime_ideas
 		full_idea_group = administrative_ideas
-		full_idea_group = spy_ideas
 		full_idea_group = humanist_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = indigenous_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
+		amount = 4
+		}
+	}
+		land_forcelimit_modifier = 0.15
+} 
+
+noble_captains_two = {
+	monarch_power = MIL
+	potential = {
+		adm_tech = 18
+	}
+	allow = {
+		calc_true_if = {
+		full_idea_group = aristocracy_ideas
+		full_idea_group = plutocracy_ideas
+		full_idea_group = innovativeness_ideas
+		full_idea_group = religious_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = diplomatic_ideas
+		full_idea_group = offensive_ideas
+		full_idea_group = defensive_ideas
+		full_idea_group = trade_ideas
+		full_idea_group = economic_ideas
+		full_idea_group = exploration_ideas
+		full_idea_group = maritime_ideas
+		full_idea_group = quality_ideas
+		full_idea_group = quantity_ideas
+		full_idea_group = expansion_ideas
+		full_idea_group = administrative_ideas
+		full_idea_group = humanist_ideas
+		full_idea_group = influence_ideas
+		amount = 5
+		}
+	}
+		land_morale = 0.10
+} 
+
+noble_captains_two = {
+	monarch_power = MIL
+	potential = {
+		adm_tech = 18
+	}
+	allow = {
+		calc_true_if = {
+		full_idea_group = aristocracy_ideas
+		full_idea_group = plutocracy_ideas
+		full_idea_group = innovativeness_ideas
+		full_idea_group = religious_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = diplomatic_ideas
+		full_idea_group = offensive_ideas
+		full_idea_group = defensive_ideas
+		full_idea_group = trade_ideas
+		full_idea_group = economic_ideas
+		full_idea_group = exploration_ideas
+		full_idea_group = maritime_ideas
+		full_idea_group = quality_ideas
+		full_idea_group = quantity_ideas
+		full_idea_group = expansion_ideas
+		full_idea_group = administrative_ideas
+		full_idea_group = humanist_ideas
+		full_idea_group = influence_ideas
+		amount = 5
+		}
+	}
+		land_morale = 0.10
+} 
+
+grunt_to_general = {
+	monarch_power = MIL
+	potential = {
+		adm_tech = 18
+	}
+	allow = {
+		calc_true_if = {
+		full_idea_group = aristocracy_ideas
+		full_idea_group = plutocracy_ideas
+		full_idea_group = innovativeness_ideas
+		full_idea_group = religious_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = diplomatic_ideas
+		full_idea_group = offensive_ideas
+		full_idea_group = defensive_ideas
+		full_idea_group = trade_ideas
+		full_idea_group = economic_ideas
+		full_idea_group = exploration_ideas
+		full_idea_group = maritime_ideas
+		full_idea_group = quality_ideas
+		full_idea_group = quantity_ideas
+		full_idea_group = expansion_ideas
+		full_idea_group = administrative_ideas
+		full_idea_group = humanist_ideas
+		full_idea_group = influence_ideas
+		amount = 5
+		}
+	}
+		army_tradition = 1
+} 
+
+snake_act = {
+	monarch_power = MIL
+	potential = {
+		adm_tech = 18
+	}
+	allow = {
+		calc_true_if = {
+		full_idea_group = aristocracy_ideas
+		full_idea_group = plutocracy_ideas
+		full_idea_group = innovativeness_ideas
+		full_idea_group = religious_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = diplomatic_ideas
+		full_idea_group = offensive_ideas
+		full_idea_group = defensive_ideas
+		full_idea_group = trade_ideas
+		full_idea_group = economic_ideas
+		full_idea_group = exploration_ideas
+		full_idea_group = maritime_ideas
+		full_idea_group = quality_ideas
+		full_idea_group = quantity_ideas
+		full_idea_group = expansion_ideas
+		full_idea_group = administrative_ideas
+		full_idea_group = humanist_ideas
+		full_idea_group = influence_ideas
+		amount = 5
+		}
+	}
+		province_warscore_cost = -0.15
+} 
+
+recovery_policy = {
+	monarch_power = MIL
+	potential = {
+		adm_tech = 21
+	}
+	allow = {
+		calc_true_if = {
+		full_idea_group = aristocracy_ideas
+		full_idea_group = plutocracy_ideas
+		full_idea_group = innovativeness_ideas
+		full_idea_group = religious_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = diplomatic_ideas
+		full_idea_group = offensive_ideas
+		full_idea_group = defensive_ideas
+		full_idea_group = trade_ideas
+		full_idea_group = economic_ideas
+		full_idea_group = exploration_ideas
+		full_idea_group = maritime_ideas
+		full_idea_group = quality_ideas
+		full_idea_group = quantity_ideas
+		full_idea_group = expansion_ideas
+		full_idea_group = administrative_ideas
+		full_idea_group = humanist_ideas
+		full_idea_group = influence_ideas
 		amount = 6
 		}
 	}
-	
-	land_forcelimit_modifier = 0.2
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+		recover_army_morale_speed = 0.20
 }
 
-longer_barrels = {
+martial_law = {
 	monarch_power = MIL
-	
 	potential = {
-		adm_tech = 22
+		adm_tech = 21
 	}
-	
 	allow = {
 		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = diplomatic_ideas
 		full_idea_group = aristocracy_ideas
 		full_idea_group = plutocracy_ideas
+		full_idea_group = innovativeness_ideas
+		full_idea_group = religious_ideas
+		full_idea_group = spy_ideas
+		full_idea_group = diplomatic_ideas
 		full_idea_group = offensive_ideas
 		full_idea_group = defensive_ideas
 		full_idea_group = trade_ideas
 		full_idea_group = economic_ideas
 		full_idea_group = exploration_ideas
+		full_idea_group = maritime_ideas
 		full_idea_group = quality_ideas
 		full_idea_group = quantity_ideas
 		full_idea_group = expansion_ideas
-		full_idea_group = maritime_ideas
 		full_idea_group = administrative_ideas
-		full_idea_group = spy_ideas
 		full_idea_group = humanist_ideas
 		full_idea_group = influence_ideas
-		full_idea_group = indigenous_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
 		amount = 6
 		}
 	}
-	
-	artillery_power = 0.1
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
-}
-
-recruitment_officers = {
-	monarch_power = MIL
-	
-	potential = {
-		adm_tech = 26
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = expansion_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = administrative_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = indigenous_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		amount = 7
-		}
-	}
-	
-	global_regiment_recruit_speed = -0.30
-
-	ai_will_do = {
-		factor = 0.5
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
-}
-
-deeper_cover = {
-	monarch_power = MIL
-	
-	potential = {
-		adm_tech = 26
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = expansion_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = administrative_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = indigenous_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		amount = 7
-		}
-	}
-	
-	fire_damage_received = -0.1
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
-}
-
-guns_akimbo = {
-	monarch_power = MIL
-	
-	potential = {
-		adm_tech = 29
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = expansion_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = administrative_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = indigenous_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		amount = 8
-		}
-	}
-	
-	fire_damage = 0.10
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
-}
-
-double_rations = {
-	monarch_power = MIL
-	
-	potential = {
-		adm_tech = 29
-	}
-	
-	allow = {
-		calc_true_if = {
-		full_idea_group = innovativeness_ideas
-		full_idea_group = religious_ideas
-		full_idea_group = diplomatic_ideas
-		full_idea_group = aristocracy_ideas
-		full_idea_group = plutocracy_ideas
-		full_idea_group = offensive_ideas
-		full_idea_group = defensive_ideas
-		full_idea_group = trade_ideas
-		full_idea_group = economic_ideas
-		full_idea_group = exploration_ideas
-		full_idea_group = quality_ideas
-		full_idea_group = quantity_ideas
-		full_idea_group = expansion_ideas
-		full_idea_group = maritime_ideas
-		full_idea_group = administrative_ideas
-		full_idea_group = spy_ideas
-		full_idea_group = humanist_ideas
-		full_idea_group = influence_ideas
-		full_idea_group = indigenous_ideas
-		full_idea_group = theocracy_gov_ideas
-		full_idea_group = horde_gov_ideas
-		amount = 8
-		}
-	}
-	
-	land_attrition = -0.15
-
-	ai_will_do = {
-		factor = 1
-		modifier = {
-			factor = 1.5
-			is_at_war = yes
-		}
-	}
+		global_unrest = -5
 }
