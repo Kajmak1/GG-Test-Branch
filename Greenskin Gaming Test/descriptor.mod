@@ -3,6 +3,5 @@ tags={
 	"Balance"
 	"Gameplay"
 }
-name="Greenskin Gaming 2"
+name="Greenskin Gaming Test"
 supported_version="1.31.*"
-remote_file_id="2645075527"

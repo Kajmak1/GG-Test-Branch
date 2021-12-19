@@ -3,6 +3,6 @@ tags={
 	"Balance"
 	"Gameplay"
 }
-name="Greenskin Gaming 2"
+name="Greenskin Gaming Test"
 supported_version="1.31.*"
-path="mod/Greenskin Gaming 2"
+path="mod/Greenskin Gaming Test"
