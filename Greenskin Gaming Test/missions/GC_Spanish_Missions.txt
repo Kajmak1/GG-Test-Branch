@@ -852,7 +852,7 @@ gc_spain_3_b = {
 		position = 5
 
 		provinces_to_highlight = {
-			colonial_region = colonial_colombia
+			colonial_region = colonial_mexico
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = yes
 		}
@@ -862,7 +862,7 @@ gc_spain_3_b = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
-				colonial_region = colonial_colombia
+				colonial_region = colonial_mexico
 				is_city = yes
 			}
 		}
@@ -2082,7 +2082,7 @@ gc_spain_5_c = {
 		position = 6
 
 		provinces_to_highlight = {
-			colonial_region = colonial_colombia
+			colonial_region = colonial_mexico
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 
@@ -2091,11 +2091,11 @@ gc_spain_5_c = {
 				tooltip = colombia_holy_order_tooltip
 				num_of_states_owned_or_owned_by_non_sovereign_subjects_with = {
 					has_holy_order_trigger = yes
-					colonial_region = colonial_colombia
+					colonial_region = colonial_mexico
 					value = 5
 				}
 			}
-			colonial_colombia = {
+			colonial_mexico = {
 				type = all
 				country_or_non_sovereign_subject_holds = ROOT
 			}
