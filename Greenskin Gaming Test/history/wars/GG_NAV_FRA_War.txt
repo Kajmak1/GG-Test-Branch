@@ -1,0 +1,17 @@
+name = "Navarra-France War"
+war_goal = {
+	type = take_claim
+	casus_belli = cb_conquest
+	province = 173
+}
+
+1443.1.1 = {
+	add_attacker = NAV
+	add_defender = FRA
+}
+
+# Truce
+1443.12.12 = {
+	rem_attacker = NAV
+	rem_defender = FRA
+}

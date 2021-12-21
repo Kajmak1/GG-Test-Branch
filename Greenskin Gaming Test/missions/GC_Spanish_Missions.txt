@@ -75,7 +75,7 @@ gc_spain_1 = {
 			else = {
 				custom_trigger_tooltip = {
 					tooltip = miss_discover_caribbean
-					colonial_the_carribean = { has_discovered = ROOT }
+					colonial_mexico = { has_discovered = ROOT }
 				}
 			}
 		}
@@ -127,7 +127,7 @@ gc_spain_1_b = {
 		# free mission
 
 		provinces_to_highlight = {
-			colonial_region = colonial_the_carribean
+			colonial_region = colonial_mexico
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -137,7 +137,7 @@ gc_spain_1_b = {
 				tooltip = miss_colonize_caribbean
 				num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 					value = 1
-					colonial_region = colonial_the_carribean
+					colonial_region = colonial_mexico
 					is_city = yes
 				}
 			}
@@ -254,7 +254,7 @@ gc_spain_1_b = {
 		#completed_by = 1521.1.1
 
 		provinces_to_highlight = {
-			colonial_region = colonial_california
+			colonial_region = colonial_mexico
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = ROOT
 		}
@@ -266,7 +266,7 @@ gc_spain_1_b = {
 			}
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
-				colonial_region = colonial_california
+				colonial_region = colonial_mexico
 				is_city = yes
 			}
 		}
@@ -275,7 +275,7 @@ gc_spain_1_b = {
 			2021 = {
 				add_base_tax = 3
 			}
-			colonial_california = {
+			colonial_mexico = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -1262,118 +1262,38 @@ gc_spain_4 = {
 
 		provinces_to_highlight = {
 			OR = {
-				area = valencia_area
-				area = catalonia_area
-				area = aragon_area
+				area = vasconia_area
 			}
 			NOT = { owned_by = ROOT }
 		}
 
 		trigger = {
-			is_year = 1460
-			valencia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			catalonia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			aragon_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			NAV = {
+				is_subject_of = ROOT
+				}
 		}
 
 		effect = {
-			if = {
+			valencia_area = {
 				limit = {
-					exists = POR
-					valid_for_personal_unions_trigger = yes
-					POR = {
-						valid_for_personal_unions_trigger = yes
-					}
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				add_casus_belli = {
-					type = cb_restore_personal_union
-					months = 300
-					target = POR
-				}
+				add_permanent_claim = ROOT
 			}
-			else = {
-				alentejo_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
-				}
-				beieras_area = {
-					limit = {
-						NOT = { is_permanent_claim = ROOT }
-						NOT = { is_core = ROOT	}
-					}
-					add_permanent_claim = ROOT
-				}
-			}
-			if = {
+			aragon_area = {
 				limit = {
-					NOT = { NAP = { is_subject_of = ROOT } }
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				sicily_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				calabria_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				apulia_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
-				naples_area = {
-					limit = {
-						NOT = { is_core = ROOT }
-						NOT = { is_permanent_claim = ROOT }
-					}
-					add_permanent_claim = ROOT
-				}
+				add_permanent_claim = ROOT
 			}
-			else = {
-				sicily_area = {
-					limit = {
-						NOT = { country_or_non_sovereign_subject_holds = ROOT }
-					}
-					add_permanent_claim = NAP
+			catalonia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-				calabria_area = {
-					limit = {
-						NOT = { country_or_non_sovereign_subject_holds = ROOT }
-					}
-					add_permanent_claim = NAP
-				}
-				apulia_area = {
-					limit = {
-						NOT = { country_or_non_sovereign_subject_holds = ROOT }
-					}
-					add_permanent_claim = NAP
-				}
-				naples_area = {
-					limit = {
-						NOT = { country_or_non_sovereign_subject_holds = ROOT }
-					}
-					add_permanent_claim = NAP
-				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -1384,31 +1304,13 @@ gc_spain_4 = {
 
 		provinces_to_highlight = {
 			OR = {
-				area = sicily_area
-				area = calabria_area
-				area = apulia_area
-				area = naples_area
+				area = baleares_area
 			}
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 		}
 
 		trigger = {
-			sicily_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			calabria_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			apulia_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
-			naples_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
-			}
+			navy_size_percentage = 0.9
 		}
 
 		effect = {
@@ -1416,42 +1318,7 @@ gc_spain_4 = {
 				name = "spa_rb_italian_ambition_mod"
 				duration = 5475
 			}
-			tuscany_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			lombardy_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			po_valley_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			wallonia_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			flanders_area = {
-				limit = {
-					NOT = { is_core = ROOT }
-					NOT = { is_permanent_claim = ROOT }
-				}
-				add_permanent_claim = ROOT
-			}
-			brabant_area = {
+			baleares_area = {
 				limit = {
 					NOT = { is_core = ROOT }
 					NOT = { is_permanent_claim = ROOT }
@@ -1460,37 +1327,63 @@ gc_spain_4 = {
 			}
 		}
 	}
-	gc_cas_spa_italian_ambition_2 = {
+	gc_cas_spa_maghrebi_ambition_2 = {
 		icon = mission_italian_conquest
 		required_missions = { gc_cas_spa_italian_ambition }
 
 		provinces_to_highlight = {
-			OR = {
-				area = tuscany_area
-				area = lombardy_area
-				area = po_valley_area
-			}
-			NOT = { country_or_non_sovereign_subject_holds = ROOT }
+			province_id = 127
+			province_id = 1247
+			province_id = 4735
+			province_id = 2986
 		}
 
 		trigger = {
-			tuscany_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			127 = {
+			    owned_by = ROOT
+				controlled_by = ROOT
 			}
-			lombardy_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			1247 = {
+			    owned_by = ROOT
+				controlled_by = ROOT
 			}
-			po_valley_area = {
-				type = all
-				country_or_non_sovereign_subject_holds = ROOT
+			4735 = {
+			    owned_by = ROOT
+				controlled_by = ROOT
+			}
+			2986 = {
+			    owned_by = ROOT
+				controlled_by = ROOT
 			}
 		}
 		effect = {
-			add_country_modifier = {
-				name = "spa_milan"
-				duration = 7300
+			tunisia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			western_sicily_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			kabylia_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			djerba_area = {
+				limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
 		}
 	}
@@ -1725,7 +1618,7 @@ gc_spain_4_c = {
 		position = 6
 
 		provinces_to_highlight = {
-			colonial_region = colonial_la_plata
+			colonial_region = colonial_south_america
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = yes
 		}
@@ -1733,7 +1626,7 @@ gc_spain_4_c = {
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
-				colonial_region = colonial_la_plata
+				colonial_region = colonial_south_america
 				is_city = yes
 			}
 		}
