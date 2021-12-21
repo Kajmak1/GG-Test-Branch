@@ -362,14 +362,14 @@ mali_missions_3 = {
 		icon = mission_establish_high_seas_navy
 		required_missions = { mal_ambitions_in_brazil }
 		provinces_to_highlight = {
-			colonial_region = colonial_la_plata
+			colonial_region = colonial_brazil
 			NOT = { country_or_non_sovereign_subject_holds = ROOT }
 			has_discovered = yes
 		}
 		trigger = {
 			num_of_provinces_owned_or_owned_by_non_sovereign_subjects_with = {
 				value = 5
-				colonial_region = colonial_la_plata
+				colonial_region = colonial_brazil
 				is_city = yes
 			}
 		}
