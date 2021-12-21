@@ -335,6 +335,7 @@ buffer_zone_commerce = {
 
 the_unknown_frontier = {
 	colonist_placement_chance = 0.2
+	colonists = 1
 }
 
 por_ivory_gains = {

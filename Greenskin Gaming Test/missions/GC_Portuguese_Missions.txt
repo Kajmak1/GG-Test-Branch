@@ -333,11 +333,9 @@ gc_por_2 = {
 					has_discovered = ROOT
 				}
 			}
-			num_of_colonists = 1
 		}
 		
 		effect = {
-			add_prestige = 10
 			add_country_modifier = {
 				name = "the_unknown_frontier"
 				duration = 5475
@@ -369,10 +367,69 @@ gc_por_2 = {
 		}
 	
 		effect = {
-			create_explorer = {
-				tradition = 60
+		    1151 = {
+		 		limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
 			}
-			add_dip_power = 60
+			1163 = {
+		 		limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			1164 = {
+		 		limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			1165 = {
+		 		limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}
+			4078 = {
+		 		limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+			1166 = {
+		 		limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}			
+			4079 = {
+		 		limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}			
+			4080 = {
+		 		limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}	
+			1168 = {
+		 		limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
+				}
+				add_permanent_claim = ROOT
+			}			
 		}
 	}
 	gc_por_colonise_central_africa = {
@@ -393,29 +450,32 @@ gc_por_2 = {
 					has_discovered = ROOT
 				}
 			}
-			custom_trigger_tooltip = {	
-				tooltip = miss_colonize_kongo
-				kongo_region = {
-					owned_by = ROOT
-					is_city = yes
-				}
+			1168 = {
+			   owned_by = ROOT
+			   controlled_by = ROOT
 			}
+			4080 = {
+			   owned_by = ROOT
+			   controlled_by = ROOT
+			}		
+			4079 = {
+			   owned_by = ROOT
+			   controlled_by = ROOT
+			}
+			1166 = {
+			   owned_by = ROOT
+			   controlled_by = ROOT
+			}				
 		}
 	
 		effect = {
-			hidden_effect = {
-				4097 = {
-					discover_country = ROOT
+             kongo_region = {
+		 		limit = {
+					NOT = { is_core = ROOT }
+					NOT = { is_permanent_claim = ROOT }
 				}
-			}
-			4097 = {
-				add_trade_modifier = {
-					who = root
-					duration = 5475
-					power = 20
-					key = ivory_coast_ambition
-				}
-			}
+				add_permanent_claim = ROOT
+			}	
 		}
 	}
 }
@@ -738,6 +798,7 @@ gc_por_3_b = {
 		}
 		
 		effect = {
+		    cash = 500
 			custom_tooltip = portuguese_carib_tooltip
 			hidden_effect = {
 				every_subject_country = {

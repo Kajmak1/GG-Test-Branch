@@ -1057,11 +1057,12 @@ BRA_ideas = {
 POR_ideas = {
 	start = {
 		range = 0.25
-		trade_efficiency = 0.15
+		may_explore = yes
 	}
 	
 	bonus = {
-		discipline = 0.05
+		land_morale = 0.15
+		mercenary_discipline = 0.2
 	}
 	
 	trigger = {
@@ -1070,25 +1071,25 @@ POR_ideas = {
 	free = yes		#will be added at load.
 	
 	legacy_of_the_navigator = {
-		sunk_ship_morale_hit_recieved = -0.25
-		disengagement_chance = 0.05
+		mercenary_cost = -0.15
+		mercenary_manpower = 0.33
 	}
 	afonsine_ordinances = {
 		global_trade_goods_size_modifier = 0.1
 	}
 	case_de_india = {
-		global_trade_power = 0.1
+		global_colonial_growth = 15
 	}
 	land_before_faith = {
-		global_colonial_growth = 15
+		global_trade_power = 0.15
 		heavy_ship_power = 0.1
 	}
 	the_bandeirantes = {
-		merchants = 1
+		trade_efficiency = 0.15
 	}
 	royal_absolutism = {
 		build_cost = -0.15
-		yearly_absolutism = 0.5
+        siege_ability = 0.15
 	}
 	por_royal_military_academy = {
 		defensiveness = 0.1
