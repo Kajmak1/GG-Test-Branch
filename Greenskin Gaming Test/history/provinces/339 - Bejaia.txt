@@ -1,7 +1,7 @@
 #339 - Bejaia
 
-owner = TUN
-controller = TUN
+owner = KBA
+controller = KBA
 culture = berber
 religion = ibadi
 capital = "Bejaia"

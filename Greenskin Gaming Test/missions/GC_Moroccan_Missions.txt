@@ -165,21 +165,21 @@ gc_morocco_1 = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 			western_sahara_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 			dendi_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 		}
 	}
@@ -219,91 +219,91 @@ gc_morocco_1 = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 			zazzau_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 			katsina_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 			hausa_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 			bornu_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 			kanem_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 			jenne_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 			massina_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 			upper_volta_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 			kong_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 			manding_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 			baghena_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 			futa_jallon_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}			
 		}
 	}
@@ -364,21 +364,21 @@ gc_morocco_1 = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 			lower_niger_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 			benin_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 		}
 	}
@@ -454,6 +454,34 @@ gc_morocco_2 = {
 		}
 		
 		effect = {
+			1247 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}
+			4698 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}			
+			2348 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}				
+			1979 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT
+			}			
 			add_country_modifier = {
 				name = mor_privateering
 				duration = 7300
@@ -597,33 +625,40 @@ gc_morocco_3 = {
 			NOT = { num_of_rebel_controlled_provinces = 1 }
 		}
 		effect = {
-			algiers_area = {
+			126 = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
 				add_permanent_claim = ROOT
+			}
+			algiers_area = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT = ROOT
 			}
 			barbary_coast_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 			hautes_plaines_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 			tafilalt_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 		}
 	}
@@ -663,6 +698,27 @@ gc_morocco_3 = {
 		}
 		
 		effect = {
+			4560 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT = ROOT
+			}
+			333 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT = ROOT
+			}
+			4559 = {
+				limit = {
+					NOT = { is_permanent_claim = ROOT	}
+					NOT = { is_core = ROOT	}
+				}
+				add_permanent_claim = ROOT = ROOT
+			}			
 			add_country_modifier = {
 				name = "mor_barbary_pirate_coast"
 				duration = 7300
@@ -707,28 +763,28 @@ gc_morocco_3 = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 			tunisia_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 			djerba_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 			tripolitania_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 			370 = {
 				if = {
@@ -736,7 +792,7 @@ gc_morocco_3 = {
 						NOT = { is_permanent_claim = ROOT	}
 						NOT = { is_core = ROOT	}
 					}
-					add_permanent_claim = ROOT
+					add_permanent_claim = ROOT = ROOT
 					discover_country = ROOT
 				}
 			}
@@ -746,7 +802,7 @@ gc_morocco_3 = {
 						NOT = { is_permanent_claim = ROOT	}
 						NOT = { is_core = ROOT	}
 					}
-					add_permanent_claim = ROOT
+					add_permanent_claim = ROOT = ROOT
 					discover_country = ROOT
 				}
 			}
@@ -788,14 +844,14 @@ gc_morocco_3 = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 			subarctic_islands_area = {
 				limit = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 				discover_country = ROOT
 			}
 		}
@@ -891,7 +947,7 @@ gc_morocco_4 = {
 						NOT = { is_permanent_claim = ROOT	}
 						NOT = { is_core = ROOT	}
 					}
-					add_permanent_claim = ROOT
+					add_permanent_claim = ROOT = ROOT
 				}		
 			}
 		}
@@ -920,7 +976,7 @@ gc_morocco_4 = {
 					NOT = { is_permanent_claim = ROOT	}
 					NOT = { is_core = ROOT	}
 				}
-				add_permanent_claim = ROOT
+				add_permanent_claim = ROOT = ROOT
 			}
 			221 = {
 				if = {
@@ -930,7 +986,7 @@ gc_morocco_4 = {
 							is_core = ROOT
 						}
 					}
-					add_permanent_claim = ROOT
+					add_permanent_claim = ROOT = ROOT
 				}
 			}
 			4547 = {
@@ -941,7 +997,7 @@ gc_morocco_4 = {
 							is_core = ROOT
 						}
 					}
-					add_permanent_claim = ROOT
+					add_permanent_claim = ROOT = ROOT
 				}
 			}
 			218 = {
@@ -952,7 +1008,7 @@ gc_morocco_4 = {
 							is_core = ROOT
 						}
 					}
-					add_permanent_claim = ROOT
+					add_permanent_claim = ROOT = ROOT
 				}
 			}
 		}
