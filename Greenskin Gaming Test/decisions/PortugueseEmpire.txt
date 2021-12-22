@@ -33,6 +33,7 @@ country_decisions = {
 			owns_core_province = 1177
 		}
 		effect = {
+			POE = { set_government_rank = 3 }
 			change_tag = POE
 			guinea_region = {
 				limit = {

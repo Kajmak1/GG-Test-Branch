@@ -1,0 +1,45 @@
+POE_ideas = {
+	start = {
+		core_creation = -0.15
+		may_explore = yes
+	}
+	
+	bonus = {
+		land_morale = 0.15
+		mercenary_discipline = 0.2
+	}
+	
+	trigger = {
+		tag = POE
+	}
+	free = yes		#will be added at load.
+	
+	legacy_of_the_navigator = {
+		num_accepted_cultures = 3
+		global_unrest = -2
+	}
+	afonsine_ordinances = {
+		global_trade_goods_size_modifier = 0.1
+		global_trade_power = 0.15
+	}
+	case_de_india = {
+		mercenary_cost = -0.2
+		mercenary_manpower = 0.33
+	}
+	land_before_faith = {
+		global_trade_power = 0.15
+		trade_efficiency = 0.15
+	}
+	the_bandeirantes = {
+		artillery_power = 0.10
+		infantry_power = 0.10
+	}
+	royal_absolutism = {
+		build_cost = -0.15
+        naval_forcelimit_modifier = 0.2
+	}
+	por_royal_military_academy = {
+		defensiveness = 0.1
+		allowed_marine_fraction = 0.2
+	}
+}

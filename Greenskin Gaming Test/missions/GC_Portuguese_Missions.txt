@@ -338,7 +338,6 @@ gc_por_2 = {
 		effect = {
 			add_country_modifier = {
 				name = "the_unknown_frontier"
-				duration = 5475
 			}
 		}
 	}
