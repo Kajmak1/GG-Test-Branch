@@ -1,0 +1,7 @@
+#English Normandy
+vassal =  {
+	first = ENG
+	second = NRM
+	start_date = 1444.11.10
+	end_date = 1820.1.1
+}
