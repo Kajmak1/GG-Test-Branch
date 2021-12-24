@@ -1,0 +1,14 @@
+﻿l_english:
+ urbanisation:0 "Golden Age (Economic)"
+ urbanisation_title:0 "Golden Age (Economic)"
+ urbanisation_desc:0 "50 years of reduced power cost, increased goods produced and cheaper construction cost. No longer part of the normal Golden Age ability. Gecko Decision"
+ sm_hire_conquistador_title:0 "Hire A Foreign Conquistador"
+ sm_hire_conquistador_desc:0 "The recent discovery of the New World has led to a rush to explore and establish new trade routes. We must ensure we are the first to establish colonies in these new lands. Foreign conquistadors are available to hire to meet this purpose. Gecko Decision"
+ sm_hire_explorer_title:0 "Hire A Foreign Explorer"
+ sm_hire_explorer_desc:0 "The recent discovery of the New World has led to a rush to explore and establish new trade routes. We must ensure we are the first to establish colonies in these new lands. Foreign explorers are available to hire to meet this purpose. Gecko Decision"
+ free_colonist_title:0 "Settle the World"
+ free_colonist_desc:0 "Recent discoveries have lead to a great demand for Crown sponsored colonies.Gecko Decision"
+ gc_war_taxes_notification_title:0 "WAR TAXES ARE ON!"
+ gc_war_taxes_notification_desc:0 "You're using War Taxes. You might want to deactivate them. Gecko Decision"
+
+ 

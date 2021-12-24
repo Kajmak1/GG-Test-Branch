@@ -1,0 +1,118 @@
+country_decisions = {
+
+
+	urbanisation = {
+		major = yes
+		potential = {
+				NOT = { has_country_flag = urbanisation_taken }
+			}
+
+		allow = {
+				AND = {
+					adm_power = 100
+					dip_power = 100
+					mil_power = 100
+				}
+				splendor = 200
+		}
+		effect = {
+			
+			add_country_modifier = {
+				name = "urbanisation"
+				duration = 18250
+			}
+			set_country_flag = urbanisation_taken
+		}
+	}
+	
+	sm_hire_explorer = {	
+		potential = {
+				is_bankrupt = no
+				ai = no
+				#has_institution = new_world_i
+				NOT = { has_country_modifier = hired_explorer }
+			}
+			allow = {
+				#has_institution = new_world_i
+			}
+			effect = {
+				add_years_of_income = -0.1
+				create_explorer = { tradition = 10 }
+				add_country_modifier = {
+				name = "hired_explorer"
+				duration = 1825
+				hidden = yes
+				}
+			}
+		}	
+		
+	sm_hire_conquistador = {	
+		potential = {
+				is_bankrupt = no
+				ai = no
+				#has_institution = new_world_i
+				NOT = { has_country_modifier = hired_conquistador }
+			}
+			allow = {
+				#has_institution = new_world_i
+			}
+			effect = {
+				add_years_of_income = -0.1
+				create_conquistador = { tradition = 10 }
+				add_country_modifier = {
+				name = "hired_conquistador"
+				duration = 1825
+				hidden = yes
+				}
+			}	
+		}
+	free_colonist = {
+		potential = {
+				NOT = {
+					capital_scope = {
+						continent = north_america
+					}
+				}
+				NOT = {
+					capital_scope = {
+						continent = south_america
+					}
+				}
+				NOT = { has_country_modifier = free_colonist}
+					
+			}
+
+		allow = {
+			NOT = {
+				OR = {
+					capital_scope = { region = australia_region }
+					capital_scope = { region = oceanea_region }
+				}
+			}
+			#has_institution = new_world_i
+			dip_tech = 6
+			was_player = yes
+		}
+		effect = {
+			add_country_modifier = {
+				name = "free_colonist"
+				duration = -1
+			}
+		}
+	}	
+	gc_war_taxes_notification = {
+		major = yes
+		potential = {
+			ai = no
+			has_wartaxes = yes
+			NOT = { current_age = age_of_discovery }
+		}
+		allow = {
+			has_wartaxes = yes
+		}
+		effect = {
+		}
+	}
+	
+
+		

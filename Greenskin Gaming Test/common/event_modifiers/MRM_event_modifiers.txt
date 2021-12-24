@@ -222,3 +222,20 @@ mjl_swedish_iron={
 mjl_swedish_income={
     global_tax_income=24
 }
+
+urbanisation = {
+	all_power_cost = -0.1
+	global_trade_goods_size_modifier = 0.1
+}
+
+hired_explorer = {
+}
+
+hired_conquistador = {
+}
+
+free_colonist = {
+	colonists = 2
+	range = 2.5
+	global_colonial_growth = 25
+}

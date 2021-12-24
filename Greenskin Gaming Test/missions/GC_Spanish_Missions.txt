@@ -1327,7 +1327,7 @@ gc_spain_4 = {
 			}
 		}
 	}
-	gc_cas_spa_maghrebi_ambition_2 = {
+	gc_cas_spa_maghrebi_ambition = {
 		icon = mission_italian_conquest
 		required_missions = { gc_cas_spa_italian_ambition }
 
