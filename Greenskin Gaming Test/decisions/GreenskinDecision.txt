@@ -80,3 +80,19 @@ country_decisions = {
 			factor = 1
 		}
 	}
+	
+	#2nd policy
+	greenskin_policy_decision = {
+		major = yes
+		potential = {
+			NOT = { has_country_flag = policy_decision_taken }
+		}
+		allow = { 
+			adm_tech = 10
+		}
+		effect = {
+			free_adm_policy = 1
+			free_dip_policy = 1
+			free_mil_policy = 1
+		}
+	}
